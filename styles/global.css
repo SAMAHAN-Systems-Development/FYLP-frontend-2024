@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* color styles for the project */
+:root {
+    --color-dark-blue: 3 60 175;
+    --color-blue: 3 100 253;
+    --color-sky-blue: 0 180 255;
+    --color-red: 253 30 10;
+    --color-yellow: 254 220 62;
+    --color-white: 255 255 255;
+    --color-black: 32 32 32;
+  }
+
+*,
+*::before,
+*::after {
+  box-sizing: 'border-box';
+}
+
+* {
+  margin: '0';
+}
+
+img {
+  max-width: '100%';
+  display: 'block';
+}
