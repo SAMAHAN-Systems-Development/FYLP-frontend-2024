@@ -53,22 +53,22 @@ module.exports = {
       );
       addUtilities({
         '.container-xs': {
-          '@apply container max-w-[22] mx-auto xsm:px-0': {},
+          '@apply container max-w-[24rem] mx-auto xsm:px-0': {},
         },
         '.container-sm': {
-          '@apply container max-w-[33rem] mx-auto sm:px-0': {},
+          '@apply container max-w-[36rem] mx-auto sm:px-0': {},
         },
         '.container-md': {
-          '@apply container max-w-[45rem] mx-auto md:px-0': {},
+          '@apply container max-w-[48rem] mx-auto md:px-0': {},
         },
         '.container-lg': {
-          '@apply container max-w-[58rem] mx-auto lg:px-0': {},
+          '@apply container max-w-[62rem] mx-auto lg:px-0': {},
         },
         '.container-xl': {
-          '@apply container max-w-[71rem] mx-auto xl:px-0': {},
+          '@apply container max-w-[75rem] mx-auto xl:px-0': {},
         },
         '.container-2xl': {
-          '@apply container max-w-[81.5rem] mx-auto 2xl:px-0': {},
+          '@apply container max-w-[87.5rem] mx-auto 2xl:px-0': {},
         },
       });
     },
