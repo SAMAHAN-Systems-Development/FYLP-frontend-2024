@@ -13,6 +13,10 @@ module.exports = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
     },
+    fontFamily: {
+      inter: ['var(--font-inter)'],
+      poppins: ['var(--font-poppins)'],
+    },  
     colors: {
       darkblue: 'rgb(var(--color-dark-blue) / <alpha-value>)',
       blue: 'rgb(var(--color-blue) / <alpha-value>)',
