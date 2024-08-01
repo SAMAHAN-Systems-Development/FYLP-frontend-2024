@@ -11,9 +11,13 @@
     "build-storybook": "storybook build"
   },
   "dependencies": {
+    "@cyrilolanolan/prettier-config": "^0.2.1",
+    "googleapis": "^140.0.1",
     "next": "14.2.5",
+    "nodemailer": "^6.9.14",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "zod": "^3.23.8"
   },
   "devDependencies": {
     "@chromatic-com/storybook": "^1.6.1",
