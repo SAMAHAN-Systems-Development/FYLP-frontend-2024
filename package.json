@@ -13,6 +13,12 @@
   "dependencies": {
     "@cyrilolanolan/prettier-config": "^0.2.1",
     "googleapis": "^140.0.1",
+    "@emotion/react": "^11.13.0",
+    "@emotion/styled": "^11.13.0",
+    "@mui/icons-material": "^5.16.6",
+    "@mui/material": "^5.16.6",
+    "@radix-ui/react-separator": "^1.1.0",
+    "material-icons": "^1.13.12",
     "next": "14.2.5",
     "nodemailer": "^6.9.14",
     "react": "^18",

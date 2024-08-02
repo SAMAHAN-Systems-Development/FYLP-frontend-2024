@@ -1,3 +1,4 @@
+import Footer from '@/components/ui/Footer';
 import { Metadata } from 'next';
 
 export const metadata = {
@@ -9,8 +10,8 @@ export const metadata = {
 export default function Home() {
   return (
     <main>
-      {/* add sections here */}
-      FYLP: Filipino Youth Leadership Program 2024
+ 
+      <Footer></Footer>
     </main>
   );
 }
