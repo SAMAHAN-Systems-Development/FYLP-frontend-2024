@@ -11,6 +11,8 @@
     --color-yellow: 254 220 62;
     --color-white: 255 255 255;
     --color-black: 32 32 32;
+    --font-inter: 'Inter', sans-serif;
+    --font-poppins: 'Poppins', sans-serif;
   }
 
 *,
@@ -27,4 +29,10 @@ img {
   max-width: '100%';
   display: 'block';
 }
+
+body {
+  font-family: var(--font-inter);
+}
+
+
 
