@@ -17,6 +17,10 @@ module.exports = {
         poppins: ['var(--font-poppins)'],
       }
     },
+    fontFamily: {
+      inter: ['var(--font-inter)'],
+      poppins: ['var(--font-poppins)'],
+    },  
     colors: {
       darkblue: 'rgb(var(--color-dark-blue) / <alpha-value>)',
       blue: 'rgb(var(--color-blue) / <alpha-value>)',
