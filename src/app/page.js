@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import NavigationBar from '../components/ui/NavigationBar';
 import HeroSection from '../components/Sections/HeroSection';
-import Section2 from '@/components/Sections/Section2';
+import Section2 from '../components/Sections/Section2';
 
 export const metadata = {
   title: 'FYLP: Filipino Youth Leadership Program 2024',
