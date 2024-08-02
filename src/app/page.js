@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import NavigationBar from '../components/ui/NavigationBar';
+import HeroSection from '../components/Sections/HeroSection';
 
 export const metadata = {
   title: 'FYLP: Filipino Youth Leadership Program 2024',
@@ -12,6 +13,7 @@ export default function Home() {
     <main>
       {/* add sections here */}
       <NavigationBar />
+      <HeroSection />
       {/* FYLP: Filipino Youth Leadership Program 2024 */}
     </main >
   );
