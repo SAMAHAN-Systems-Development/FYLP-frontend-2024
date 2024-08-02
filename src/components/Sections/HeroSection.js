@@ -6,7 +6,7 @@ import Pattern from '/public/assets/images/Pattern.png'
 
 const HeroSection = () => {
     return (
-        <div className='w-full h-[750px] mt-[205px] relative'>
+        <div className='w-full sm:h-[750px] xsm:h-[500px] mt-[205px] relative'>
             <div id='left-group' className='2xl:w-[36.1875rem] h-[25.9375rem] relative mx-[9.5rem] lg:mx-[10.5rem] md:mx-[94px] sm:mx-[53px] xsm:mx-[35.33px] z-30 flex flex-col items-center xl:items-start'>
                 <div className='flex justify-center xl:justify-start w-full'>
                     <Image 
