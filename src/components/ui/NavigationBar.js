@@ -22,16 +22,13 @@ const NavigationBar = () => {
 
     return (
         <div className="relative">
-            {/* Dim background overlay */}
             {isDropdownOpen && (
                 <div
-                    className="fixed inset-0 bg-black bg-opacity-50 z-40"
+                    className="fixed inset-0 bg-black bg-opacity-50 z-50"
                     onClick={toggleDropdown}
                 ></div>
             )}
-            {/* Navigation bar */}
             <div className={`fixed top-0 w-full z-50 ${isDropdownOpen ? 'bg-white' : 'bg-gradient-to-b from-white via-white/50 to-transparent'}`}>
-                {/* Content container */}
                 <div className="p-[1.5625rem] flex flex-col lg:flex-row justify-between items-start">
                     <div className="w-full flex justify-between items-center">
                         <div className="w-[7.8125rem] py-1 flex-col justify-center items-center gap-2.5 inline-flex">
@@ -40,7 +37,7 @@ const NavigationBar = () => {
                             </div>
                         </div>
                         <div className="block lg:hidden" onClick={toggleDropdown}>
-                            <Image src={isDropdownOpen ? ExitBurger : Burger} alt='Burger Icon' width={65} height={53} className='cursor-pointer' />
+                            <Image src={isDropdownOpen ? ExitBurger : Burger} alt='Burger Icon' className='cursor-pointer sm:w-[65px] sm:h-[53px] xsm:w-[43.33px] xsm:h-[35.33px]' />
                         </div>
                     </div>
                     <div className={`w-full lg:flex lg:w-auto lg:mt-0`}>
@@ -57,7 +54,7 @@ const NavigationBar = () => {
                             ].map((nav) => (
                                 <Link key={nav.label} href={nav.href}>
                                     <div className="inline-flex items-center justify-center relative px-[25px] py-3 gap-2.5">
-                                        <div className="text-center text-black text-lg font-semibold font-poppins hover:text-red cursor-pointer transition-colors duration-300">
+                                        <div className="text-center text-black sm:text-lg xsm:text-xs font-semibold font-poppins hover:text-red cursor-pointer transition-colors duration-300">
                                             {nav.label}
                                         </div>
                                     </div>
