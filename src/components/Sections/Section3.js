@@ -5,16 +5,16 @@ import Primer from '/public/assets/images/Primer.png'
 
 const Section3 = () => {
     return (
-        <div className='w-full xl:h-[750px] xsm:h-[1100px] relative flex xl:justify-end justify-center'>
+        <div className='w-full max-w-[1700px] xl:h-[750px] xsm:h-[1100px] relative flex xl:justify-end justify-center'>
             <div id='left-group'>
                 <Image
                     src={Primer}
                     alt='Primer'
                     placeholder='blur'
-                    className='absolute 2xl:left-[415px] xl:left-[290px] xl:top-[-40px] sm:top-[-0px] xsm:top-[0] xsm:left-1/2 xsm:-translate-x-1/2 xsm:w-[430px] xsm:h-[609px] sm:w-[500px] sm:h-[629.06px] xl:w-[647px] xl:h-[814px] overflow-visible'
+                    className='absolute 2xl:left-[555px] xl:left-[390px] xl:top-[-40px] sm:top-[-0px] xsm:top-[0] xsm:left-1/2 xsm:-translate-x-1/2 xsm:w-[430px] xsm:h-[609px] sm:w-[500px] sm:h-[629.06px] xl:w-[647px] xl:h-[814px] overflow-visible'
                 />
             </div>
-            <div id='right-group' className='2xl:w-[576px] xl:w-[526px] xsm:h-[189.33px] xsm:w-[189.33px] sm:h-[284px] relative xsm:mt-[650px] xl:my-[232px] xl:mr-[20px] 2xl:mr-[150px] z-30 flex flex-col items-center xl:items-start '>
+            <div id='right-group' className='2xl:w-[576px] xl:w-[526px] xsm:h-[189.33px] xsm:w-[189.33px] sm:h-[284px] relative xsm:mt-[650px] xl:my-[232px] xl:mr-[50px] z-30 flex flex-col items-center xl:items-start '>
                 <div className='font-poppins font-semibold sm:text-[25px] text-[16.67px] flex justify-center xl:justify-start w-full space-x-2'>
                     <span className="text-blue"> Filipino</span>
                     <span className="text-red"> Youth</span>
