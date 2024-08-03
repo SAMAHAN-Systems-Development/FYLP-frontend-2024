@@ -59,7 +59,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div id='credits' className='flex flex-col lg:flex-row items-center lg:justify-between lg: ml-auto mr-auto w-full mt-[58px]'>
+      <div id='credits' className='flex flex-col text-center lg:flex-row items-center lg:justify-between mx-[20px] lg:mx-[100px] w-full mt-[58px]'>
         <p className='font-poppins text-sm font-normal'>Organized by PIGLASAPAT © 2024 FYLP</p>
         <p className='font-poppins text-sm'>Developed by <Link href="#" className='font-poppins font-bold hover:text-[#FD1E0A] transition-colors duration-300'>SAMAHAN Systems Development</Link></p>
       </div>
