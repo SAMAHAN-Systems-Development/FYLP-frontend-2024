@@ -9,9 +9,7 @@ const Section2 = () => {
                     <div>
                         <p className="sm:text-[16px] xsm:text-[10.67px] sm:leading-[24px] xsm:leading-[16px] font-poppins font-medium">Joining the Filipino Youth Leadership Program offers a unique opportunity for personal and professional growth, providing young leaders with essential skills, invaluable networking opportunities, and hands-on experience through community immersion, all while making a meaningful impact in their communities.</p>
                     </div>
-                    
                 </div>
-                
             </div>
         </>
     )
