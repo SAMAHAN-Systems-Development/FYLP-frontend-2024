@@ -6,7 +6,7 @@ import FYLPLogo from '/public/assets/images/LOGO_FYLP.png';
 import Link from 'next/link';
 import FacebookRoundedIcon from '@mui/icons-material/FacebookRounded';
 import InstagramIcon from '@mui/icons-material/Instagram';
-import * as Separator from '@radix-ui/react-separator';
+import Socials from '/src/components/ui/Socials.js'
 
 
 const Footer = () => {
@@ -48,20 +48,17 @@ const Footer = () => {
             <div className='mt-6'></div>
            
             <div className='text-center lg:text-right'>
-              <p className='font-poppins font-[600] text-[15px] text-center lg:text-right'>Socials</p>
-              <Link href="https://www.facebook.com/phfylp" target="_blank" aria-label="Facebook">
-                <FacebookRoundedIcon className='icon hover:text-[#FD1E0A] transition-colors duration-300' />
-              </Link>
-              <Link href="https://www.instagram.com/phfylp/" target="_blank" aria-label="Instagram">
-                <InstagramIcon className='icon hover:text-[#FD1E0A] transition-colors duration-300' />
-              </Link>
+              <p className='font-poppins font-[600] text-[15px]'>Socials</p>
+              <div className=' flex justify-end  mt-1 text-center lg:text-right '>
+                <Socials />
+              </div>
             </div>
           </div>
         </div>
       </div>
       <div id='credits' className='flex flex-col text-center lg:flex-row items-center lg:justify-between mx-[20px] lg:mx-[100px] w-full mt-[58px]'>
         <p className='font-poppins text-sm font-normal'>Organized by PIGLASAPAT © 2024 FYLP</p>
-        <p className='font-poppins text-sm'>Developed by <Link href="#" className='font-poppins font-bold hover:text-[#FD1E0A] transition-colors duration-300'>SAMAHAN Systems Development</Link></p>
+        <p className='font-poppins text-sm'>Developed by <Link href="https://www.facebook.com/SAMAHANSysDev" className='font-poppins font-bold hover:text-[#FD1E0A] transition-colors duration-300'>SAMAHAN Systems Development</Link></p>
       </div>
     </div>
   );

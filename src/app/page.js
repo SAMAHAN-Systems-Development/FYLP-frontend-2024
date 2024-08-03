@@ -18,8 +18,8 @@ export default function Home() {
       {/* <NavigationBar />
       <HeroSection />
       <Section2 /> */}
-      <CheckStatusTxtField />
-      {/* <Footer /> */}
+      {/* <CheckStatusTxtField /> */}
+      <Footer />
     
       {/* FYLP: Filipino Youth Leadership Program 2024 */}
     </main >
