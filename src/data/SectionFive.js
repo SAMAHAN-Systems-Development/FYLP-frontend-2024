@@ -31,5 +31,4 @@ export const FYLP_Program = [
         title:'Professional Advancement',
         description:'Delegates gain practical experience, build networks, and receive mentorship, enhancing their employability and preparing them for leadership roles in their fields.',
     },
-    
 ]
