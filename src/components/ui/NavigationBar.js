@@ -3,9 +3,9 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
-import FYLPLogo from 'public/assets/images/FYLP_Logo.png';
-import Burger from 'public/assets/ICON.png';
-import ExitBurger from 'public/assets/X_ICON.png';
+import FYLPLogo from '/public/assets/images/FYLP_Logo.png';
+import Burger from '/public/assets/ICON.png';
+import ExitBurger from '/public/assets/X_ICON.png';
 
 const NavigationBar = () => {
     const [isDropdownOpen, setDropdownOpen] = useState(false);
