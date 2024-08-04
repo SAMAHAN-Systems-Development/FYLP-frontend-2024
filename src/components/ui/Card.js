@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const Card = ({ name, position, imageUrl }) => {
   return (
-    <div className="w-[18.75rem] h-[28.125rem] rounded-[0.9375rem] relative overflow-hidden">
+    <div className="w-[14.125rem] h-[20.125rem] rounded-[0.9375rem] relative overflow-hidden">
       <Image
         draggable={false}
         fill
