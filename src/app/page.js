@@ -1,9 +1,8 @@
-import Footer from '@/components/ui/Footer';
+import Footer from '@/components/Footer';
 import { Metadata } from 'next';
 import NavigationBar from '../components/ui/NavigationBar';
 import HeroSection from '../components/Sections/HeroSection';
 import Section2 from '../components/Sections/Section2';
-import CheckStatusTxtField from '../components/ui/CheckStatusTxtField'
 
 export const metadata = {
   title: 'FYLP: Filipino Youth Leadership Program 2024',
@@ -18,7 +17,6 @@ export default function Home() {
       {/* <NavigationBar />
       <HeroSection />
       <Section2 /> */}
-      {/* <CheckStatusTxtField /> */}
       <Footer />
     
       {/* FYLP: Filipino Youth Leadership Program 2024 */}
