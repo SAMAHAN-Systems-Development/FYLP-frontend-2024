@@ -11,7 +11,7 @@ const AccordionComponent = ({ question, answer }) => {
   };
 
   return (
-    <Accordion.Root type="single" collapsible className="p-2">
+    <Accordion.Root type="single" collapsible className="py-2 px-4">
       <Accordion.Item
         value="item-1"
         className="p-1 border-2 border-gray-400 rounded-lg lg:w-[38.5626rem] sm:w-full md:w-full "
