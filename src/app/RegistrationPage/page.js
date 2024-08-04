@@ -79,7 +79,7 @@ export default function Page() {
                         </ol>
                     </div>
                     <div className="flex justify-center xsm:mt-[35px] sm:mt-[55px] xl:mt-[50px] 2xl:mt-[55px]">
-                        <MainButton href="">apply as a delegate</MainButton>
+                        <MainButton href="https://docs.google.com/forms/d/17smTdDBxL6BSHFONyc_2IfwGmoW_PHRm8DVVD7Rh_94/edit">apply as a delegate</MainButton>
                     </div>
                 </div>
 
@@ -118,7 +118,7 @@ export default function Page() {
                         </ol>
                     </div>
                     <div className="flex justify-center xsm:mt-[35px] sm:mt-[55px] xl:mt-[50px] 2xl:mt-[55px]">
-                        <MainButton href="">apply as a mentor</MainButton>
+                        <MainButton href="https://docs.google.com/forms/d/1w3p8KYcN0yRelXW7cSsa9Uw8xzlkUQN9UEz9Vk8nCek/edit">apply as a mentor</MainButton>
                     </div>
                 </div>
                 
