@@ -6,8 +6,7 @@ import Section2 from '../components/Sections/Section2';
 
 export const metadata = {
   title: 'FYLP: Filipino Youth Leadership Program 2024',
-  description:
-    'The official Filipino Youth Leadership Program 2024 Website.',
+  description: 'The official Filipino Youth Leadership Program 2024 Website.',
 };
 
 export default function Home() {
@@ -18,8 +17,8 @@ export default function Home() {
       <HeroSection />
       <Section2 /> */}
       <Footer />
-    
+
       {/* FYLP: Filipino Youth Leadership Program 2024 */}
-    </main >
+    </main>
   );
 }
