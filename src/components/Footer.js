@@ -57,8 +57,8 @@ const Footer = () => {
         </div>
       </div>
       <div id='credits' className='font-poppins flex flex-col text-center lg:flex-row items-center lg:justify-between mx-[20px] lg:mx-[100px] w-full mt-[58px]'>
-        <p className=' text-sm font-normal'>Organized by <Link href="https://www.facebook.com/ateneopiglas" className='hover:text-[#FD1E0A] transition-colors duration-300'>PIGLASAPAT </Link>© 2024 FYLP</p>
-        <p className=' text-sm'>Developed by <Link href="https://www.facebook.com/SAMAHANSysDev" className='font-bold hover:text-[#FD1E0A] transition-colors duration-300'>SAMAHAN Systems Development</Link></p>
+        <p className=' text-sm font-normal'>Organized by <Link target="_blank" href="https://www.facebook.com/ateneopiglas" className='hover:text-[#FD1E0A] transition-colors duration-300 font-semibold' >PIGLASAPAT </Link>© 2024 FYLP</p>
+        <p className=' text-sm'>Developed by <Link target="_blank" href="https://www.facebook.com/SAMAHANSysDev" className='font-bold hover:text-[#FD1E0A] transition-colors duration-300'>SAMAHAN Systems Development</Link></p>
       </div>
     </div>
   );
