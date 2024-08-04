@@ -49,7 +49,7 @@ const Footer = () => {
            
             <div className='text-center lg:text-right'>
               <p className='font-[600] text-[15px]'>Socials</p>
-              <div className=' flex justify-end  mt-1 text-center lg:text-right '>
+              <div className=' flex text-center justify-center mt-1  lg:text-right lg:justify-end'>
                 <Socials />
               </div>
             </div>
