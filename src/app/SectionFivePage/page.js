@@ -1,22 +1,22 @@
-import React from "react";
-import SectionFiveCard from "@/components/ui/SectionFiveCard";
-import { FYLP_Program } from "@/data/SectionFive";
-import MainButton from "@/components/ui/MainButton";
-import Image from "next/image";
-import AccordionComponent from "../../components/ui/AccordionComponent";
-import {FAQS} from "@/data/faqs"
+import React from 'react';
+import SectionFiveCard from '@/components/ui/SectionFiveCard';
+import { FYLP_Program } from '@/data/SectionFive';
+import MainButton from '@/components/ui/MainButton';
+import Image from 'next/image';
+import AccordionComponent from '../../components/AccordionComponent';
+import { FAQS } from '@/data/faqs';
 
 // for testing purposes
 export default function SectionFivePage() {
   return (
-<div>
-{FAQS.map((faqs,index) =>(
-  <div key={index}>
-    <AccordionComponent question={faqs.question} answer={faqs.answer} />
+    <div>
+      {FAQS.map((faqs, index) => (
+        <div key={index}>
+          <AccordionComponent question={faqs.question} answer={faqs.answer} />
+        </div>
+      ))}
     </div>
-))}
-</div>
-   
+
     // <div className="w-full py-10">
     //   <div className="relative">
     //     <div id='right-group' className="absolute inset-0 overflow-hidden">
