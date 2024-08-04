@@ -1,3 +1,4 @@
+import Footer from '@/components/Footer';
 import { Metadata } from 'next';
 import NavigationBar from '../components/ui/NavigationBar';
 import HeroSection from '../components/Sections/HeroSection';
@@ -13,9 +14,11 @@ export default function Home() {
   return (
     <main>
       {/* add sections here */}
-      <NavigationBar />
+      {/* <NavigationBar />
       <HeroSection />
-      <Section2 />
+      <Section2 /> */}
+      <Footer />
+    
       {/* FYLP: Filipino Youth Leadership Program 2024 */}
     </main >
   );
