@@ -50,9 +50,9 @@ const NavigationBar = () => {
                         >
                             {[
                                 { label: 'Home', href: '/' },
-                                { label: 'About', href: '#' },
+                                { label: 'About', href: '/AboutUsPage' },
                                 { label: 'FAQ', href: '#' },
-                                { label: 'Check Status', href: '#' },
+                                { label: 'Check Status', href: 'check-status' },
                             ].map((nav) => (
                                 <Link key={nav.label} href={nav.href}>
                                     <div className="inline-flex items-center justify-center relative px-[25px] py-3 gap-2.5">

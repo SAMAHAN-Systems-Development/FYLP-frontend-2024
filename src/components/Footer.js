@@ -44,13 +44,13 @@ const Footer = () => {
               Quick Links
             </p>
             <Link
-              href="#"
+              href="/"
               className=" text-sm hover:text-[#FD1E0A] transition-colors duration-300"
             >
               Home
             </Link>
             <Link
-              href="#"
+              href="/AboutUsPage"
               className="text-sm hover:text-[#FD1E0A] transition-colors duration-300"
             >
               About Us
@@ -68,7 +68,7 @@ const Footer = () => {
               Check Status
             </Link>
             <Link
-              href="#"
+              href="check-status"
               className="text-sm hover:text-[#FD1E0A] transition-colors duration-300"
             >
               Meet The Developers
