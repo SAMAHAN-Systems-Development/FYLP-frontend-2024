@@ -6,7 +6,6 @@ import MainButton from "@/components/ui/MainButton";
 export default function Page() {
     return (
         <>
-            <NavigationBar></NavigationBar>
             <div className="flex sm:h-[342px] xsm:h-[228px] w-[calc(100%+175px)] opacity-20 overflow-hidden sm:-ml-[175px] xsm:-ml-[120px]">
                 <div className="relative sm:min-w-[893.5px] xsm:min-w-[595.67px] overflow-hidden">
                     <Image
