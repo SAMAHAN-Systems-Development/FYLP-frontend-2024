@@ -1,4 +1,3 @@
-import Footer from '@/components/Footer';
 import { Metadata } from 'next';
 import NavigationBar from '../components/ui/NavigationBar';
 import HeroSection from '../components/Sections/HeroSection';
@@ -18,7 +17,6 @@ export default function Home() {
       <HeroSection />
       <Section2 /> */}
       <CheckStatusTxtField />
-      <Footer />
 
       {/* FYLP: Filipino Youth Leadership Program 2024 */}
     </main>
