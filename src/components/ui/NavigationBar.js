@@ -47,7 +47,7 @@ const NavigationBar = () => {
                             onTransitionEnd={handleTransitionEnd}
                         >
                             {[
-                                { label: 'Home', href: '#' },
+                                { label: 'Home', href: '/' },
                                 { label: 'About', href: '#' },
                                 { label: 'FAQ', href: '#' },
                                 { label: 'Check Status', href: '#' },

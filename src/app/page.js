@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import NavigationBar from '../components/ui/NavigationBar';
 import HeroSection from '../components/Sections/HeroSection';
 import Section2 from '../components/Sections/Section2';
-import Section3 from '../components/Sections/Section3';
+<<<<<<<<< Temporary merge branch 1
 import CheckStatusTxtField from '../components/CheckStatusTxtField'
 
 export const metadata = {
@@ -17,13 +17,12 @@ export default function Home() {
       {/* <NavigationBar />
       <HeroSection />
       <Section2 /> */}
-      <Section3/>
+      <Section3 />
       <CheckStatusTxtField />
-
-      <NavigationBar />
-      <HeroSection />
       <Section2 />
-   
+      <Section3 />
+      <SectionFour />
+      <SectionFive />
       {/* FYLP: Filipino Youth Leadership Program 2024 */}
     </main>
   );

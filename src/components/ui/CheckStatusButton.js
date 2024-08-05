@@ -1,15 +1,22 @@
-'use client';
-import { useState } from 'react';
-const CheckStatusButton = () => {
+import React, { useState } from 'react';
+
+const CheckStatusButton = ({ text, handleButtonClick, isSelected }) => {
   const [isHovered, setIsHovered] = useState(false);
+
   return (
     <button
-      className={`mx-5 w-1/6 rounded-md outline outline-[#6b7280] p-5 ${isHovered ? 'hover:bg-[#FF7568]' : 'bg-orange'} `}
-      type="button"
+      className={`justify-center m-2 p-5 w-1/6 min-w-40 max-w-48 rounded-md border-2 border-[#6b7280] transition duration-300 ease-in-out
+        ${isHovered ? 'hover:border-[#FD1E0A] text-[#FD1E0A] font-semibold' : 'bg-orange'} }
+        ${isSelected ? 'bg-[#FD1E0A] text-white border-0' : ''} 
+        `}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
+      value={text}
+      onClick={(e) => {
+        handleButtonClick(e);
+      }}
     >
-      Hello
+      {text}
     </button>
   );
 };
