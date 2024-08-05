@@ -10,7 +10,7 @@ function SectionFiveCard({ imageUrl, alt, title, description }) {
             className='object-cover'
             src={imageUrl}
             alt={alt}
-            layout='fill'
+            fill
           />
         </div>
       </div>

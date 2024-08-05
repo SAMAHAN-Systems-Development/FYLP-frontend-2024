@@ -7,16 +7,16 @@ import Person from '../../../public/assets/person.png';
 
 const SectionFour = () => {
   return (
-    <div className="flex flex-col gap-2 justify-center items-center">
+    <div className="xl:py-[5.12rem] xl:px-[13.5rem] xsm:py-[2.75rem] xsm:px-[1rem] flex flex-col gap-2 justify-center items-center">
       <div className="uppercase xl:text-2xl xsm:text-[0.83331rem] font-semibold font-poppins">
         Eligibility
       </div>
       <div className="xl:text-base xsm:text-[0.66669rem] font-normal text-center font-poppins">
-        Meet the criteria to qualify and participate in this program. Ensure you{' '}
+        Meet the criteria to qualify and participate in this program. Ensure you
         <br />
         satisfy all requirements outlined below.
       </div>
-      <div className="grid grid-cols-1 gap-8 lgs:grid-cols-1 xl:grid-cols-3 py-2 px-2">
+      <div className="grid grid-cols-1 xl:gap-8 xsm:gap-3 lgs:grid-cols-1 xl:grid-cols-3 py-2 px-2">
         <EligibilityCardLight
           icon={Home}
           title={'Mindanao Resident'}
