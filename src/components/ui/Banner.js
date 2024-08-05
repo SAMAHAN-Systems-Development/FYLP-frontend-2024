@@ -9,8 +9,11 @@ const Banner = () => {
   };
 
   return (
-    <div className='w-full'>
-      <div className="flex sm:h-[342px] xsm:h-[228px] max-w-[1920px] w-full opacity-20 overflow-visible" style={bannerStyle}></div>
+    <div className="w-full">
+      <div
+        className="flex sm:h-[342px] xsm:h-[228px] max-w-[1920px] w-full opacity-20 overflow-visible"
+        style={bannerStyle}
+      ></div>
     </div>
   );
 };
