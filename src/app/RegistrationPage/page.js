@@ -1,12 +1,29 @@
 import React from "react";
 import Image from "next/image";
+import NavigationBar from "@/components/ui/NavigationBar";
 import MainButton from "@/components/ui/MainButton";
-import Banner from "@/components/ui/Banner";
 
 export default function Page() {
     return (
         <>
-            <Banner />
+            <NavigationBar></NavigationBar>
+            <div className="flex sm:h-[342px] xsm:h-[228px] w-[calc(100%+175px)] opacity-20 overflow-hidden sm:-ml-[175px] xsm:-ml-[120px]">
+                <div className="relative sm:min-w-[893.5px] xsm:min-w-[595.67px] overflow-hidden">
+                    <Image
+                        src="/assets/BannerPattern.png"
+                        alt=""
+                        fill
+                    />
+                </div>
+                <div className="relative sm:min-w-[893.5px] xsm:min-w-[595.67px] overflow-hidden">
+                    <Image
+                        src="/assets/BannerPattern.png"
+                        alt=""
+                        fill
+                    />
+                </div>
+                
+            </div>
             <div className="mt-[50px] mx-auto xl:w-[1000px] lg:w-[848px] md:w-[669px] sm:w-[510px] xsm:w-[340px]">
                 <div className="xsm:mb-[10px] lg:mb-[5px] xl:mb-[0px]">
                     <div className="relative sm:w-[250px] sm:h-[90px] mb-[10px] xsm:w-[166.67px] xsm:h-[60px]">
