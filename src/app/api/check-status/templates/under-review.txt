@@ -1,0 +1,10 @@
+Dear $name,
+
+Thank you for applying to the Filipino Youth Leadership Program. We have received your application, and it is currently under review.
+
+We appreciate your interest and enthusiasm in joining this transformative journey towards becoming a community leader and part of collective action. Our team is carefully evaluating all applications to ensure a comprehensive and fair selection process.
+
+Thank you for your patience and understanding.
+
+Best regards,
+The Filipino Youth Leadership Program Team
