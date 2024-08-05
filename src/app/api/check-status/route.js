@@ -143,9 +143,3 @@ export async function POST(request) {
     { status: 200 }
   );
 }
-
-export const config = {
-  api: {
-    bodyParser: true,
-  },
-};
