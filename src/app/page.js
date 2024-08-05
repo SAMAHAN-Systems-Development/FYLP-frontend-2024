@@ -2,8 +2,9 @@ import { Metadata } from 'next';
 import NavigationBar from '../components/ui/NavigationBar';
 import HeroSection from '../components/Sections/HeroSection';
 import Section2 from '../components/Sections/Section2';
-<<<<<<<<< Temporary merge branch 1
-import CheckStatusTxtField from '../components/CheckStatusTxtField'
+import Section3 from '../components/Sections/Section3';
+import CheckStatusTxtField from '../components/CheckStatusTxtField';
+import Footer from '@/components/Footer';
 
 export const metadata = {
   title: 'FYLP: Filipino Youth Leadership Program 2024',
@@ -17,12 +18,13 @@ export default function Home() {
       {/* <NavigationBar />
       <HeroSection />
       <Section2 /> */}
-      <Section3 />
+      {/* <Section3 /> */}
       <CheckStatusTxtField />
-      <Section2 />
-      <Section3 />
-      <SectionFour />
-      <SectionFive />
+
+      {/* <NavigationBar />
+      <HeroSection />
+      <Section2 /> */}
+
       {/* FYLP: Filipino Youth Leadership Program 2024 */}
     </main>
   );
