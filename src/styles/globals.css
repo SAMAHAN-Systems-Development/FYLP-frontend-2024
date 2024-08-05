@@ -34,12 +34,18 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
-.float{
-  height: 700px;
-  width: 700px;
-  opacity: 0;
-  animation: float 5s ease-in-out infinite;
+@keyframes float {
+  0% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(30px);
+  }
+  100% {
+      transform: translateY(0);
+  }
 }
 
-
-
+.float-image {
+  animation: float 3s ease-in-out infinite;
+}

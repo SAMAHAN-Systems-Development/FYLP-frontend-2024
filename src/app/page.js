@@ -1,6 +1,5 @@
 import HeroSection from '../components/Sections/HeroSection';
 import Section2 from '../components/Sections/Section2';
-import Section3 from '../components/Sections/Section3';
 import SectionFour from '../components/Sections/SectionFour';
 import SectionFive from '../components/Sections/SectionFive';
 
@@ -15,7 +14,6 @@ export default function Home() {
       {/* add sections here */}
       <HeroSection />
       <Section2 />
-      {/* <Section3/> */}
       <SectionFour />
       <SectionFive />
       {/* FYLP: Filipino Youth Leadership Program 2024 */}
