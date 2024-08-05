@@ -16,7 +16,6 @@ export default function Home() {
       {/* add sections here */}
       <HeroSection />
       <Section2 />
-      <Section2 />
       <Section3 />
       <SectionFour />
       <SectionFive />
