@@ -53,7 +53,7 @@ module.exports = {
       },
     },
     screens: {
-      xsm: '384px',
+      xsm: '360px',
       sm: '576px',
       md: '768px',
       lg: '992px',
