@@ -18,6 +18,10 @@ export default function Home() {
       <Section2 /> */}
       <CheckStatusTxtField />
 
+//       <Section2 />
+//       <Section3 />
+//       <SectionFour />
+//       <SectionFive />
       {/* FYLP: Filipino Youth Leadership Program 2024 */}
     </main>
   );
