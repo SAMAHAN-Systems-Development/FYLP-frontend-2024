@@ -11,14 +11,14 @@ export const metadata = {
 
 export default function Home() {
   return (
-      <main>
-        {/* add sections here */}
-        <HeroSection />
-        <Section2 />
-        <Section3 />
-        <SectionFour />
-        <SectionFive />
-        {/* FYLP: Filipino Youth Leadership Program 2024 */}
-      </main>
+    <main>
+      {/* add sections here */}
+      <HeroSection />
+      <Section2 />
+      <Section3 />
+      <SectionFour />
+      <SectionFive />
+      {/* FYLP: Filipino Youth Leadership Program 2024 */}
+    </main>
   );
 }
