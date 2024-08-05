@@ -21,14 +21,14 @@ export const FYLP_Program = [
         title:'Community Engagement',
         description:'Delegates engage with communities through immersive activities, volunteer work, and collaborative projects, fostering a deep understanding of social issues and driving positive change.',
     },
-    {
-        imageUrl: picFour,
-        title:'Personal Growth',
-        description:'FYLP supports self-discovery and personal development with reflective practices, goal-setting exercises, and diverse perspectives, nurturing well-rounded individuals.',
-    },
-    {
-        imageUrl: picFive,
-        title:'Professional Advancement',
-        description:'Delegates gain practical experience, build networks, and receive mentorship, enhancing their employability and preparing them for leadership roles in their fields.',
-    },
+    // {
+    //     imageUrl: picFour,
+    //     title:'Personal Growth',
+    //     description:'FYLP supports self-discovery and personal development with reflective practices, goal-setting exercises, and diverse perspectives, nurturing well-rounded individuals.',
+    // },
+    // {
+    //     imageUrl: picFive,
+    //     title:'Professional Advancement',
+    //     description:'Delegates gain practical experience, build networks, and receive mentorship, enhancing their employability and preparing them for leadership roles in their fields.',
+    // },
 ]
