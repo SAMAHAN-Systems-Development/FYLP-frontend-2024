@@ -94,9 +94,9 @@ const Footer = () => {
             <p className=" font-[600] text-center lg:text-right text-[15px]">
               E-mail
             </p>
-            <p className=" w-full text-sm font-normal text-center leading-5 lg:text-right">
+            <a href='mailto:fylp2024@gmail.com' className=" w-full text-sm font-normal text-center leading-5 lg:text-right hover:underline">
               contact@fylp.com
-            </p>
+            </a>
             <div className="mt-6"></div>
             <p className=" font-[600]  text-[15px] text-center lg:text-right">
               Telephone

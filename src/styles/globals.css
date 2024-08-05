@@ -31,7 +31,14 @@ img {
 }
 
 body {
-  font-family: var(--font-inter);
+  font-family: 'Poppins', sans-serif;
+}
+
+.float{
+  height: 700px;
+  width: 700px;
+  opacity: 0;
+  animation: float 5s ease-in-out infinite;
 }
 
 
