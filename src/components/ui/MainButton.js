@@ -8,7 +8,8 @@ const MainButton = ({href, children}) => {
             <Link href={href || "/"} passHref={true}>
                 <button 
                 type='button'
-                className={'sm:w-fit sm:h-fit rounded-full bg-[#FD1E0A] hover:bg-[#FF7568] transition-colors duration-300 font-poppins text-[color:white] sm:py-[15px] sm:px-[35px] xsm:py-[10px] xsm:px-[23.33px] sm:text-[16px] xsm:text-[10.67px] leading-[24px] font-bold gap-[10px]'}>
+                className={'sm:w-fit sm:h-fit rounded-full bg-[#FD1E0A] hover:bg-[#FF7568] transition-colors duration-300 font-poppins text-[color:white] md:py-[15px] sm:px-[35px] xsm:py-[10px] xsm:px-[23.33px] sm:text-[16px] xsm:text-[10.67px] leading-[24px] font-bold gap-[10px]'}>
+
                     {typeof(children) == 'string' ? children.toUpperCase() : 'BUTTON'}
                 </button>
             </Link>

@@ -13,12 +13,10 @@ module.exports = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
       fontFamily: {
-        inter: ['var(--font-inter)'],
         poppins: ['var(--font-poppins)'],
       },
     },
     fontFamily: {
-      inter: ['var(--font-inter)'],
       poppins: ['var(--font-poppins)'],
     },
     colors: {
@@ -29,6 +27,20 @@ module.exports = {
       yellow: 'rgb(var(--color-yellow) / <alpha-value>)',
       white: 'rgb(var(--color-white) / <alpha-value>)',
       black: 'rgb(var(--color-black) / <alpha-value>)',
+    },
+    animation: {
+      fadeIn: 'fadeIn 0.5s ease-in-out',
+      fadeOut: 'fadeOut 0.5s ease-in-out',
+    },
+    keyframes: {
+      fadeIn: {
+        '0%': { opacity: 0 },
+        '100%': { opacity: 1 },
+      },
+      fadeOut: {
+        '0%': { opacity: 1 },
+        '100%': { opacity: 0 },
+      },
     },
     container: {
       center: true,
@@ -41,44 +53,44 @@ module.exports = {
       },
     },
     screens: {
-      xsm: '384px',
+      xsm: '360px',
       sm: '576px',
       md: '768px',
       lg: '992px',
       xl: '1200px',
       '2xl': '1400px',
     },
+    plugins: [
+      function ({ matchUtilities, theme, addUtilities }) {
+        matchUtilities(
+          {
+            'text-shadow': (value) => ({
+              textShadow: value,
+            }),
+          },
+          { values: theme('textShadow') }
+        );
+        addUtilities({
+          '.container-xs': {
+            '@apply container max-w-[24rem] mx-auto xsm:px-0': {},
+          },
+          '.container-sm': {
+            '@apply container max-w-[36rem] mx-auto sm:px-0': {},
+          },
+          '.container-md': {
+            '@apply container max-w-[48rem] mx-auto md:px-0': {},
+          },
+          '.container-lg': {
+            '@apply container max-w-[62rem] mx-auto lg:px-0': {},
+          },
+          '.container-xl': {
+            '@apply container max-w-[75rem] mx-auto xl:px-0': {},
+          },
+          '.container-2xl': {
+            '@apply container max-w-[87.5rem] mx-auto 2xl:px-0': {},
+          },
+        });
+      },
+    ],
   },
-  plugins: [
-    function ({ matchUtilities, theme, addUtilities }) {
-      matchUtilities(
-        {
-          'text-shadow': (value) => ({
-            textShadow: value,
-          }),
-        },
-        { values: theme('textShadow') }
-      );
-      addUtilities({
-        '.container-xs': {
-          '@apply container max-w-[24rem] mx-auto xsm:px-0': {},
-        },
-        '.container-sm': {
-          '@apply container max-w-[36rem] mx-auto sm:px-0': {},
-        },
-        '.container-md': {
-          '@apply container max-w-[48rem] mx-auto md:px-0': {},
-        },
-        '.container-lg': {
-          '@apply container max-w-[62rem] mx-auto lg:px-0': {},
-        },
-        '.container-xl': {
-          '@apply container max-w-[75rem] mx-auto xl:px-0': {},
-        },
-        '.container-2xl': {
-          '@apply container max-w-[87.5rem] mx-auto 2xl:px-0': {},
-        },
-      });
-    },
-  ],
 };

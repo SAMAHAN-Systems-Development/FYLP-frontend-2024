@@ -19,7 +19,7 @@ const SectionFive = () => {
         <div className="relative z-10 mx-auto max-w-screen-2xl">
           <div className="flex justify-center">
             <div className="text-4xl font-semibold uppercase text-center">
-              What's in it for <span className="text-red">you</span>?
+              What&apos;s in it for <span className="text-red">you</span>?
             </div>
           </div>
           <div className="flex justify-center items-center py-10">
@@ -37,7 +37,7 @@ const SectionFive = () => {
             </div>
           </div>
           <div className="flex justify-center py-5">
-            <MainButton href="/register">Register Now</MainButton>
+            <MainButton href="/RegistrationPage">Register Now</MainButton>
           </div>
         </div>
       </div>

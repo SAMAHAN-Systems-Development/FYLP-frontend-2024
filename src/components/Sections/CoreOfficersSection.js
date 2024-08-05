@@ -6,12 +6,12 @@ import { CoreOfficersData } from '@/data/CoreOfficers';
 const CoreOfficersSection = () => {
   return (
     <div className="pb-24 flex flex-col items-center font-poppins">
-      <div className="text-center">
-        <p className="text-[18px] xsm:text-[20px] font-semibold pb-5">
+      <div className="grid gap-4 text-center">
+        <div className="font-semibold font-poppins">
           Get to Know the Minds Behind
-          <span className="px-2 text-blue font-semibold ">FYLP2024</span>
-        </p>
-        <p className="text-center font-poppins">
+          <span className="text-blue"> FYLP 2024</span>
+        </div>
+        <p className="text-center font-poppins lg:text-base xsm:text-[0.83331rem]">
           Welcome to the FYLP 2024 Core Team! Our team is composed of dedicated
           professionals and passionate individuals who are committed to shaping
           the future of young leaders in Mindanao. Each member brings a wealth
