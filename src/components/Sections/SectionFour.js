@@ -8,15 +8,15 @@ import Person from '../../../public/assets/person.png';
 const SectionFour = () => {
   return (
     <div className="flex flex-col gap-2 justify-center items-center">
-      <div className="uppercase text-2xl font-semibold font-poppins">
+      <div className="uppercase xl:text-2xl xsm:text-[0.83331rem] font-semibold font-poppins">
         Eligibility
       </div>
-      <div className="text-base font-normal text-center font-poppins">
+      <div className="xl:text-base xsm:text-[0.66669rem] font-normal text-center font-poppins">
         Meet the criteria to qualify and participate in this program. Ensure you{' '}
         <br />
         satisfy all requirements outlined below.
       </div>
-      <div className="grid grid-cols-1 gap-8 md:grid-cols-1 lg:grid-cols-3 py-2 px-2">
+      <div className="grid grid-cols-1 gap-8 lgs:grid-cols-1 xl:grid-cols-3 py-2 px-2">
         <EligibilityCardLight
           icon={Home}
           title={'Mindanao Resident'}
