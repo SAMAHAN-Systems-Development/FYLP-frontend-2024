@@ -1,4 +1,3 @@
-import { Inter } from "next/font/google";
 import "@/styles/globals.css";
 import { poppins } from "@/styles/font";
 import Footer from "@/components/Footer";

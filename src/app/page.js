@@ -1,4 +1,3 @@
-import { Metadata } from 'next';
 import HeroSection from '../components/Sections/HeroSection';
 import Section2 from '../components/Sections/Section2';
 import Section3 from '../components/Sections/Section3';
@@ -12,14 +11,14 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <main>
-      {/* add sections here */}
-      <HeroSection />
-      <Section2 />
-      <Section3 />
-      <SectionFour />
-      <SectionFive />
-      {/* FYLP: Filipino Youth Leadership Program 2024 */}
-    </main>
+      <main>
+        {/* add sections here */}
+        <HeroSection />
+        <Section2 />
+        <Section3 />
+        <SectionFour />
+        <SectionFive />
+        {/* FYLP: Filipino Youth Leadership Program 2024 */}
+      </main>
   );
 }
