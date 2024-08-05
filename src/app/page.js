@@ -1,4 +1,3 @@
-import NavigationBar from '../components/ui/NavigationBar';
 import HeroSection from '../components/Sections/HeroSection';
 import Section2 from '../components/Sections/Section2';
 import SectionFour from '../components/Sections/SectionFour';
@@ -13,7 +12,6 @@ export default function Home() {
   return (
     <main>
       {/* add sections here */}
-      <NavigationBar />
       <HeroSection />
       <Section2 />
       <SectionFour />
