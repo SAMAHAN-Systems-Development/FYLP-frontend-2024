@@ -27,7 +27,7 @@ const HeroSection = () => {
           className="flex justify-center xl:justify-start absolute sm:top-[330px] xsm:top-[210px]"
         >
           <div className="sm:left-[140px] md:left-[190px] lg:left-[230px] xl:left-0">
-            <MainButton>Register Now</MainButton>
+            <MainButton href='/RegistrationPage'>Register Now</MainButton>
           </div>
         </div>
         <div className="flex justify-center xl:justify-start items-center absolute xl:left-0 xsm:bottom-[140px] sm:bottom-0 space-x-2">

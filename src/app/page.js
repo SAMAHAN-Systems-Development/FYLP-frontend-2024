@@ -13,18 +13,11 @@ export default function Home() {
   return (
     <main>
       {/* add sections here */}
-<<<<<<< Updated upstream
       <HeroSection />
       <Section2 />
-      <Section3/>
+      <Section3 />
       <SectionFour />
       <SectionFive />
-=======
-      <NavigationBar />
-      <HeroSection />
-      <Section2 />
-      <Footer />
->>>>>>> Stashed changes
       {/* FYLP: Filipino Youth Leadership Program 2024 */}
     </main>
   );

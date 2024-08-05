@@ -32,7 +32,7 @@ const Section3 = () => {
                     </p>
                 </div>
                 <div className='flex flex-col xl:flex-row justify-start items-center w-full absolute bottom-0 gap-[5.76px]'>
-                    <MainButton>Register Now</MainButton>
+                    <MainButton href='/RegistrationPage'>Register Now</MainButton>
                     <p className='uppercase font-poppins sm:text-base text-[10.67px] text-red hover:underline cursor-pointer transition-transform duration-300 hover:scale-105'>
                         Download Primer
                     </p>
