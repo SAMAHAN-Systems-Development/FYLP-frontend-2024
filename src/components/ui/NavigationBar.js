@@ -33,7 +33,9 @@ const NavigationBar = () => {
                     <div className="w-full flex justify-between items-center">
                         <div className="w-[7.8125rem] py-1 flex-col justify-center items-center gap-2.5 inline-flex">
                             <div className="h-[2.8125rem] justify-center items-center inline-flex relative">
+                                <Link href="/">
                                 <Image src={FYLPLogo} alt='FYLP Logo' />
+                                </Link>
                             </div>
                         </div>
                         <div className="block lg:hidden" onClick={toggleDropdown}>
