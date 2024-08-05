@@ -14,7 +14,7 @@ const AccordionComponent = ({ question, answer }) => {
     <Accordion.Root type="single" collapsible className="py-2 px-4">
       <Accordion.Item
         value="item-1"
-        className="p-1 border-2 border-gray-400 rounded-lg lg:w-[38.5626rem] sm:w-full md:w-full "
+        className="p-1 border-2 border-[#9CA3AF] rounded-lg lg:w-[38.5626rem] sm:w-full md:w-full "
       >
         <div
           className={`transition-all duration-300 rounded-[0.625rem] shadow-sm`}
@@ -28,7 +28,7 @@ const AccordionComponent = ({ question, answer }) => {
                 {question}
               </span>
               <IoIosArrowForward
-                className={`text-gray-400 transform transition-transform duration-300 ml-2 ${isAccordionOpen ? 'rotate-90' : ''}`}
+                className={`text-[#9CA3AF] transform transition-transform duration-300 ml-2 ${isAccordionOpen ? 'rotate-90' : ''}`}
                 style={{ width: '1.5rem', height: '1.5rem' }}
               />
             </Accordion.Trigger>
