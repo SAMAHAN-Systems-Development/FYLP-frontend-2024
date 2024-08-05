@@ -16,7 +16,7 @@ const CheckStatusTxtField = () => {
         </div>
         <div className="absolute right-0 flex justify-center items-center h-full">
             <div className="">
-                <MainButton className="">Check Status</MainButton>
+                <MainButton className="actually wala">Check Status</MainButton>
             </div>
         </div>
       </div>
