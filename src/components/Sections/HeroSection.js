@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import MainButton from '/src/components/ui/MainButton';
 import FYLPLogo from '/public/assets/images/FYLP_Logo.png';
 import Pattern from '/public/assets/images/Pattern.png';
@@ -34,9 +35,11 @@ const HeroSection = () => {
           <div className="text-[#202020] sm:text-base xsm:text-[10.67px] font-poppins font-medium">
             Already registered?
           </div>
-          <div className="text-red sm:text-base xsm:text-[10.67px] font-medium font-poppins hover:underline cursor-pointer transition-transform duration-300">
-            Check Status
-          </div>
+          <Link href='check-status'>
+            <div className="text-red sm:text-base xsm:text-[10.67px] font-medium font-poppins hover:underline cursor-pointer transition-transform duration-300">
+              Check Status
+            </div>
+          </Link>
         </div>
       </div>
       <div id="right-group">
