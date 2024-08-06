@@ -34,7 +34,7 @@ const Section3 = () => {
                     <MainButton href='/RegistrationPage'>Register Now</MainButton>
                     <a 
                         href='https://drive.google.com/uc?export=download&id=1D3QL0WTxxrlBOPx1R054j1B4TBJXX30A' 
-                        className='uppercase font-poppins sm:text-base text-[10.67px] text-red hover:underline cursor-pointer transition-transform duration-300 hover:scale-105'>
+                        className='uppercase font-poppins sm:text-base text-[10.67px] text-red hover:underline cursor-pointer transition-transform duration-300'>
                         Download Primer
                     </a>
                 </div>
