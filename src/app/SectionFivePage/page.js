@@ -1,4 +1,7 @@
 import React from 'react';
+
+import SectionFive from '@/components/Sections/SectionFive';
+import React from 'react';
 import SectionFiveCard from '@/components/ui/SectionFiveCard';
 import { FYLP_Program } from '@/data/SectionFive';
 import MainButton from '@/components/ui/MainButton';
@@ -7,8 +10,10 @@ import AccordionComponent from '../../components/AccordionComponent';
 import { FAQS } from '@/data/faqs';
 
 // for testing purposes
-export default function SectionFivePage() {
+export default function SectionFourPage() {
   return (
+    <div>
+      <SectionFive />
     <div>
       {FAQS.map((faqs, index) => (
         <div key={index}>
