@@ -29,17 +29,13 @@ export default function Page() {
     e.preventDefault();
 
     try {
-      console.log(formData);
       const response = await axios.post('/api/check-status', formData);
-      console.log('Response:', response);
-      console.log('Response:', response.data);
 
       setMessage({
         content: response.data.message[0],
         success: true,
       });
     } catch (error) {
-      console.error('Error submitting form:', error);
       setMessage({
         content: error.response.data.message[0],
         success: false,
