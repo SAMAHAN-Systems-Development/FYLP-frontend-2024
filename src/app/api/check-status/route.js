@@ -15,23 +15,44 @@ async function retrieveSheetsData(type) {
   );
 
   const sheets = google.sheets({ version: 'v4', auth: jwt });
-  const sheetId =
-    type === 'mentor'
-      ? process.env.MENTOR_SPREADSHEET_ID
-      : process.env.DELEGATE_SPREADSHEET_ID;
-  const response = await sheets.spreadsheets.values.get({
+  let sheetId, sheetRanges;
+
+  if (type === 'delegate') {
+    sheetId = process.env.DELEGATE_SPREADSHEET_ID;
+    sheetRanges = process.env.DELEGATE_SPREADSHEET_COLUMNS.split(',').map(
+      (c) => `${c}:${c}`
+    );
+  } else {
+    sheetId = process.env.MENTOR_SPREADSHEET_ID;
+    sheetRanges = process.env.MENTOR_SPREADSHEET_COLUMNS.split(',').map(
+      (c) => `${c}:${c}`
+    );
+  }
+
+  const response = await sheets.spreadsheets.values.batchGet({
     spreadsheetId: sheetId,
-    range: process.env.SPREADSHEET_RANGE,
+    ranges: sheetRanges,
   });
 
-  return response.data.values || [];
+  let rows = [];
+
+  for (let i = 1; i < response.data.valueRanges[0].values.length; i++) {
+    let row = [];
+    for (const col of response.data.valueRanges) {
+      row.push(col.values[i][0]);
+    }
+    rows.push(row);
+  }
+
+  return rows;
 }
 
-async function getStatus(email, type) {
+async function getInformation(email, type) {
   const sheetsData = await retrieveSheetsData(type);
 
-  const emailCol = process.env.EMAIL_COLUMN - 1;
-  const statusCol = process.env.STATUS_COLUMN - 1;
+  const nameCol = 0;
+  const emailCol = 1;
+  const statusCol = 2;
 
   const row = sheetsData.find((row) => row[emailCol] === email);
 
@@ -39,107 +60,155 @@ async function getStatus(email, type) {
     return null;
   }
 
-  return row[statusCol];
+  return [row[nameCol].split(',')[0].trim(), row[statusCol]];
 }
 
-async function sendEmail(email, status) {
-  try {
-    const transporter = nodemailer.createTransport({
-      service: 'gmail',
-      auth: {
-        user: process.env.APP_EMAIL,
-        pass: process.env.APP_PASSWORD,
-      },
-    });
+function getFilepaths(status, type) {
+  let htmlTemplateFile = '';
+  let textTemplateFile = '';
 
-    const date = new Date().toLocaleDateString();
-    const subject = `FYLP 2024 Application Status - ${date}`;
-
-    const htmlTemplatePath = path.join(
-      process.cwd(),
-      'src/app/api/check-status/template.html'
-    );
-    const textTemplatePath = path.join(
-      process.cwd(),
-      'src/app/api/check-status/template.txt'
-    );
-
-    let htmlTemplate = await fs.readFile(htmlTemplatePath, 'utf-8');
-    let textTemplate = await fs.readFile(textTemplatePath, 'utf-8');
-    const content = {
-      email: email,
-      status: status,
-      date: date,
-    };
-
-    for (const item in content) {
-      htmlTemplate = htmlTemplate.replaceAll('$' + item, content[item]);
-      textTemplate = textTemplate.replaceAll('$' + item, content[item]);
-    }
-
-    const mailOptions = {
-      from: process.env.GMAIL_USER,
-      to: email,
-      subject: subject,
-      text: textTemplate,
-      html: htmlTemplate,
-    };
-
-    await transporter.sendMail(mailOptions);
-  } catch (e) {
-    console.error(e);
-    throw new Error('Something went wrong with sending email.');
+  switch (status) {
+    case 'Under Review':
+      htmlTemplateFile = 'under-review.html';
+      textTemplateFile = 'under-review.txt';
+      break;
+    case 'Accepted':
+      htmlTemplateFile = `accepted-${type}.html`;
+      textTemplateFile = `accepted-${type}.txt`;
+      break;
+    case 'Rejected':
+      htmlTemplateFile = 'rejected.html';
+      textTemplateFile = 'rejected.txt';
+      break;
+    default:
+      htmlTemplateFile = 'under-review.html';
+      textTemplateFile = 'under-review.txt';
   }
+
+  const htmlTemplatePath = path.join(
+    process.cwd(),
+    'src/app/api/check-status/templates',
+    htmlTemplateFile
+  );
+  const textTemplatePath = path.join(
+    process.cwd(),
+    'src/app/api/check-status/templates',
+    textTemplateFile
+  );
+
+  return [htmlTemplatePath, textTemplatePath];
+}
+
+async function sendEmail(email, status, type, lastName) {
+  const transporter = nodemailer.createTransport({
+    service: 'gmail',
+    auth: {
+      user: process.env.APP_EMAIL,
+      pass: process.env.APP_PASSWORD,
+    },
+  });
+
+  const date = new Date().toLocaleDateString();
+  const subject = `FYLP 2024 Application Status - ${date}`;
+
+  const [htmlTemplatePath, textTemplatePath] = getFilepaths(status, type);
+
+  let htmlTemplate = await fs.readFile(htmlTemplatePath, 'utf-8');
+  let textTemplate = await fs.readFile(textTemplatePath, 'utf-8');
+  const content = {
+    email: email,
+    lastName: lastName,
+    status: status,
+  };
+
+  for (const item in content) {
+    htmlTemplate = htmlTemplate.replaceAll('$' + item, content[item]);
+    textTemplate = textTemplate.replaceAll('$' + item, content[item]);
+  }
+
+  const mailOptions = {
+    from: process.env.GMAIL_USER,
+    to: email,
+    subject: subject,
+    text: textTemplate,
+    html: htmlTemplate,
+    attachments: [
+      {
+        filename: 'Pattern.png',
+        path: path.join(
+          process.cwd(),
+          'src/app/api/check-status/templates/Pattern.png'
+        ),
+        cid: 'pattern',
+      },
+    ],
+  };
+
+  await transporter.sendMail(mailOptions);
 }
 
 export async function POST(request) {
-  let data = await request.json();
-
-  data.email = data.email ?? '';
-  data.type = data.type ?? '';
-
-  const schema = z.object({
-    email: z
-      .string()
-      .min(1, { message: 'Email is required.' })
-      .email({ message: 'Invalid email.' }),
-    type: z.enum(['mentor', 'delegate'], {
-      message: "Invalid type, should be 'mentor' or 'delegate'",
-    }),
-  });
-
   try {
-    schema.parse(data);
-  } catch (e) {
-    const message = e.errors.map((error) => error['message']);
-    return NextResponse.json({ message: message }, { status: 400 });
-  }
+    let data = await request.json();
 
-  const status = await getStatus(data.email);
-  if (!status) {
-    return NextResponse.json(
-      { message: [`Application with email '${data.email}' not found.`] },
-      { status: 400 }
-    );
-  }
+    data.email = data.email ?? '';
+    data.type = data.type ?? '';
 
-  try {
-    await sendEmail(data.email, status);
-  } catch (e) {
+    const schema = z.object({
+      email: z
+        .string()
+        .min(1, { message: 'Email is required.' })
+        .email({ message: 'Invalid email.' }),
+      type: z.enum(['mentor', 'delegate'], {
+        message: "Invalid type, should be 'mentor' or 'delegate'",
+      }),
+    });
+
+    try {
+      schema.parse(data);
+    } catch (e) {
+      const message = e.errors.map((error) => error['message']);
+      return NextResponse.json({ message: message }, { status: 400 });
+    }
+
+    const result = await getInformation(data.email, data.type);
+    let lastName, status;
+    if (!result) {
+      return NextResponse.json(
+        { message: [`Application with email '${data.email}' not found.`] },
+        { status: 400 }
+      );
+    } else {
+      [lastName, status] = result;
+    }
+
+    try {
+      await sendEmail(data.email, status, data.type, lastName);
+    } catch (e) {
+      console.log('Something went wrong with sending email', e);
+      return NextResponse.json(
+        {
+          message: [
+            'Something went wrong while sending the email. Please email samahan.sd@addu.edu.ph.',
+          ],
+        },
+        { status: 400 }
+      );
+    }
+
     return NextResponse.json(
       {
-        message: [
-          'Something went wrong while sending the email. Please email samahan.sd@addu.edu.ph.',
-        ],
+        message: [`Please check your email: ${data.email}.`],
       },
-      { status: 400 }
+      { status: 200 }
+    );
+  } catch (e) {
+    console.log(e);
+    return NextResponse.json(
+      {
+        message: [e.message],
+      },
+      { status: 500 }
     );
   }
-
-  return NextResponse.json(
-    {
-      message: [`Please check your email: ${data.email}.`],
-    },
-    { status: 200 }
-  );
 }
