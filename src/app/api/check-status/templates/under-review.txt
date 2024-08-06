@@ -1,4 +1,4 @@
-Dear $name,
+Dear Mx. $lastName,
 
 Thank you for applying to the Filipino Youth Leadership Program. We have received your application, and it is currently under review.
 

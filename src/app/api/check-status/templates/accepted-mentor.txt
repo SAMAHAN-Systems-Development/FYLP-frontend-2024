@@ -1,4 +1,4 @@
-Dear $name,
+Dear Mx. $lastName,
 
 Congratulations!
 

@@ -1,4 +1,4 @@
-Dear $name,
+Dear Mx. $lastName,
 
 Thank you for your application to the Filipino Youth Leadership Program. We greatly appreciate the time and effort you invested in your interview and your interest in the program.
 
