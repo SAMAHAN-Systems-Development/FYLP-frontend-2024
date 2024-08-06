@@ -56,7 +56,7 @@ const Footer = () => {
               About Us
             </Link>
             <Link
-              href="#"
+              href="/FAQ"
               className="text-sm hover:text-[#FD1E0A] transition-colors duration-300"
             >
               FAQ
@@ -95,7 +95,7 @@ const Footer = () => {
               E-mail
             </p>
             <a href='mailto:fylp2024@gmail.com' className=" w-full text-sm font-normal text-center leading-5 lg:text-right hover:underline">
-              contact@fylp.com
+              fylp2024@gmail.com
             </a>
             <div className="mt-6"></div>
             <p className=" font-[600]  text-[15px] text-center lg:text-right">
