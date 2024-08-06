@@ -21,7 +21,7 @@ const SectionOne = () => {
           local community to implement change on a wider expanse.
         </p>
         <p className="lg:text-base xsm:text-[0.83331rem]">
-          The leadership development program intends to onboard the nation's key
+          The leadership development program intends to onboard the nation&apos;s key
           storytellers, highly-regarded fellows, and mentors of various
           backgrounds. It seeks to create a home for young Mindanaoan leaders
           who continuously act on their passions and interests, bringing life to
@@ -32,7 +32,7 @@ const SectionOne = () => {
           immersion experiences. Through FYLP 2024, we aspire to empower young
           leaders with the tools, program modules, and inspiration they need to
           become catalysts for positive change, dedicated to the service of the
-          Filipino people and the nation's continuous growth and development.
+          Filipino people and the nation&apos;s continuous growth and development.
         </p>
         <p className="lg:text-base xsm:text-[0.83331rem]">
           FYLP 2024 is scheduled to launch on September 19 - September 22, 2024,
@@ -50,7 +50,7 @@ const SectionOne = () => {
         <p className="lg:text-base xsm:text-[0.83331rem]">
           The Filipino Youth Leadership Program (FYLP), a month-long leadership
           development experience, had been designed to offer a unique
-          opportunity to be trained, formed, and inspired by the nation's key
+          opportunity to be trained, formed, and inspired by the nation&apos;s key
           storytellers, esteemed lecturers, and young-driven mentors, anchored
           in a great love for the country.
         </p>
