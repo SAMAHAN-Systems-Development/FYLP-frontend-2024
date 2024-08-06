@@ -34,7 +34,7 @@ const HeroSection = () => {
           <div className="text-[#202020] sm:text-base xsm:text-[10.67px] font-poppins font-medium">
             Already registered?
           </div>
-          <div className="text-red sm:text-base xsm:text-[10.67px] font-medium font-poppins hover:underline cursor-pointer transition-transform duration-300 hover:scale-105">
+          <div className="text-red sm:text-base xsm:text-[10.67px] font-medium font-poppins hover:underline cursor-pointer transition-transform duration-300">
             Check Status
           </div>
         </div>
