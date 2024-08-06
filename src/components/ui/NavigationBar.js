@@ -34,7 +34,7 @@ const NavigationBar = () => {
                         <div className="w-[7.8125rem] py-1 flex-col justify-center items-center gap-2.5 inline-flex">
                             <div className="h-[2.8125rem] justify-center items-center inline-flex relative">
                                 <Link href="/">
-                                <Image src={FYLPLogo} alt='FYLP Logo' />
+                                    <Image src={FYLPLogo} alt='FYLP Logo' />
                                 </Link>
                             </div>
                         </div>
@@ -45,7 +45,7 @@ const NavigationBar = () => {
                     <div className={`w-full lg:flex lg:w-auto lg:mt-0`}>
                         <div
                             id='NavLinks'
-                            className={`flex flex-col lg:flex-row justify-start items-center transition-all duration-300 ease-in-out ${isDropdownOpen ? 'opacity-100 max-h-screen' : 'opacity-0 max-h-0'} lg:opacity-100 lg:max-h-screen lg:flex w-full lg:w-auto mt-4 lg:mt-0 whitespace-nowrap`}
+                            className={`flex flex-col lg:flex-row justify-start items-center transition-all duration-300 ease-in-out ${isDropdownOpen ? 'opacity-100 max-h-screen pointer-events-auto' : 'opacity-0 max-h-0 pointer-events-none'} lg:opacity-100 lg:max-h-screen lg:pointer-events-auto lg:flex w-full lg:w-auto mt-4 lg:mt-0 whitespace-nowrap`}
                             onTransitionEnd={handleTransitionEnd}
                         >
                             {[
