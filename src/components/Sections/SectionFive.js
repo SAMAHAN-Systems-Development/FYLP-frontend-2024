@@ -18,7 +18,7 @@ const SectionFive = () => {
         </div>
         <div className="relative z-10 mx-auto max-w-screen-2xl">
           <div className="flex justify-center">
-            <div className="text-4xl font-semibold uppercase text-center">
+            <div className="xl:text-2xl xsm:text-[0.83331rem] font-semibold uppercase text-center">
               What&apos;s in it for <span className="text-red">you</span>?
             </div>
           </div>
