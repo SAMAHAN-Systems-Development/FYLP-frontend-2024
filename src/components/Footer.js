@@ -62,13 +62,13 @@ const Footer = () => {
               FAQ
             </Link>
             <Link
-              href="#"
+              href="/check-status"
               className="text-sm hover:text-[#FD1E0A] transition-colors duration-300"
             >
               Check Status
             </Link>
             <Link
-              href="check-status"
+              href="about-the-developers"
               className="text-sm hover:text-[#FD1E0A] transition-colors duration-300"
             >
               Meet The Developers
