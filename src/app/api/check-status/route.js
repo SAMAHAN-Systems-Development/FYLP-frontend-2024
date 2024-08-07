@@ -160,7 +160,7 @@ export async function POST(request) {
         .min(1, { message: 'Email is required.' })
         .email({ message: 'Invalid email.' }),
       type: z.enum(['mentor', 'delegate'], {
-        message: "Invalid type, should be 'mentor' or 'delegate'",
+        message: "Please pick between 'mentor' and 'delegate'",
       }),
     });
 
