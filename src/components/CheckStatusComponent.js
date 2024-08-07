@@ -10,7 +10,7 @@ const ButtonGroup = () => {
   };
 
   return (
-    <div>
+    <div className='flex gap-4'>
       <CheckStatusButton
         text={'DELEGATE'}
         handleButtonClick={handleButtonClick}
