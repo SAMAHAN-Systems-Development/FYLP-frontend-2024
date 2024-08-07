@@ -1,12 +1,48 @@
-import React from 'react';
-import Image from 'next/image';
+'use client';
+import React, { useState } from 'react';
 import NavigationBar from '@/components/ui/NavigationBar';
 import CheckStatusTxtField from '@/components/CheckStatusTxtField';
 import CheckStatusComponent from '@/components/CheckStatusComponent';
 import StayConnected from '@/components/StayConnected';
 import Banner from '@/components/ui/Banner';
+import axios from 'axios';
 
 export default function Page() {
+  const [formData, setFormData] = useState({
+    email: '',
+    type: '',
+  });
+
+  const [message, setMessage] = useState({
+    content: '',
+    success: true,
+  });
+
+  const onChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const onSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      const response = await axios.post('/api/check-status', formData);
+
+      setMessage({
+        content: response.data.message[0],
+        success: true,
+      });
+    } catch (error) {
+      setMessage({
+        content: error.response.data.message[0],
+        success: false,
+      });
+    }
+  };
+
   return (
     <>
       <NavigationBar></NavigationBar>
@@ -26,7 +62,10 @@ export default function Page() {
 
         <p className="mt-7">I am a:</p>
         <div className="mt-2">
-          <CheckStatusComponent></CheckStatusComponent>
+          <CheckStatusComponent
+            formData={formData}
+            onChange={onChange}
+          ></CheckStatusComponent>
         </div>
         <p className="mt-10 ">
           Enter your email address below and click
@@ -35,13 +74,9 @@ export default function Page() {
         </p>
 
         <div className="flex items-center justify-center flex-col ">
-          <CheckStatusTxtField />
-          {/* idk how to trigger the messages so i will be dispalying both */}
-          <p>
-            Success! Please check your email for the status of your application.
-          </p>
-          <p className="text-[#FD1E0A]">
-            Email not found. Please check your email address and try again.
+          <CheckStatusTxtField onChange={onChange} onSubmit={onSubmit} />
+          <p className={!message.success ? 'text-[#FD1E0A]' : ''}>
+            {message.content}
           </p>
         </div>
         <div className="mt-36 mb-32">

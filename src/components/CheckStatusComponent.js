@@ -1,25 +1,21 @@
 'use client';
-import React, { useState } from 'react';
+import React from 'react';
 import CheckStatusButton from '@/components/ui/CheckStatusButton';
 
-const ButtonGroup = () => {
-  const [selectedRole, setSelectedRole] = useState('');
-
-  const handleButtonClick = (e) => {
-    setSelectedRole(e.target.value);
-  };
-
+const ButtonGroup = ({ formData, onChange }) => {
   return (
-    <div className='flex gap-4'>
+    <div className="flex gap-4">
       <CheckStatusButton
-        text={'DELEGATE'}
-        handleButtonClick={handleButtonClick}
-        isSelected={selectedRole === 'DELEGATE'}
+        text={'delegate'}
+        name="type"
+        handleButtonClick={onChange}
+        isSelected={formData['type'] === 'delegate'}
       />
       <CheckStatusButton
-        text={'MENTOR'}
-        handleButtonClick={handleButtonClick}
-        isSelected={selectedRole === 'MENTOR'}
+        text={'mentor'}
+        name="type"
+        handleButtonClick={onChange}
+        isSelected={formData['type'] === 'mentor'}
       />
     </div>
   );
