@@ -37,7 +37,7 @@ const AccordionComponent = ({ question, answer }) => {
             className={`overflow-hidden transition-all duration-300 ${isAccordionOpen ? 'max-h-screen py-4 animate-fadeIn' : 'max-h-0 py-0 opacity-0 animate-fadeOut'}`}
           >
             <div>
-              <p className="px-4 font-normal font-poppins text-base">
+              <p className="px-4 font-normal font-poppins sm:text-base text-[12.67px]">
                 {answer}
               </p>
             </div>

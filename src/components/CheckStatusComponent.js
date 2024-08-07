@@ -4,7 +4,7 @@ import CheckStatusButton from '@/components/ui/CheckStatusButton';
 
 const ButtonGroup = ({ formData, onChange }) => {
   return (
-    <div>
+    <div className='flex gap-4'>
       <CheckStatusButton
         text={'delegate'}
         name="type"
