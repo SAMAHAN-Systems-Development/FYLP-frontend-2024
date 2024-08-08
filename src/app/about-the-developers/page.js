@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 import Card from '@/components/ui/Card';
 import { DevelopersData } from '@/data/Developers';
@@ -13,7 +14,7 @@ export default function Page() {
           </p>
         </div>
         <p className="text-center font-poppins lg:text-base xsm:text-[0.83331rem]">
-          Made possible by the  <span className="text-blue"> SAMAHAN Systems Development Team</span>
+          Made possible by the <Link href={"https://www.facebook.com/SAMAHANSysDev"}><span className="text-blue font-semibold"> SAMAHAN Systems Development Team</span> </Link>
         </p>
       </div>
       
