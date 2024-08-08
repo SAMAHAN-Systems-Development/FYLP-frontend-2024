@@ -1,5 +1,5 @@
-import React from "react";
-import Link from "next/link";
+import React from 'react';
+import Link from 'next/link';
 
 import Card from '@/components/ui/Card';
 import { DevelopersData } from '@/data/Developers';
@@ -10,14 +10,20 @@ export default function Page() {
       <div className="grid gap-4 text-center">
         <div className="px-15 xsm:px-18 text-center">
           <p className="text-[18px] xsm:text-[20px] font-semibold pb-5">
-          Meet the Developers
+            Meet the Developers
           </p>
         </div>
         <p className="text-center font-poppins lg:text-base xsm:text-[0.83331rem]">
-          Made possible by the <Link href={"https://www.facebook.com/SAMAHANSysDev"}><span className="text-blue font-semibold"> SAMAHAN Systems Development Team</span> </Link>
+          Made possible by the{' '}
+          <Link href={'https://www.facebook.com/SAMAHANSysDev'}>
+            <span className="text-blue font-semibold">
+              {' '}
+              SAMAHAN Systems Development Team
+            </span>{' '}
+          </Link>
         </p>
       </div>
-      
+
       <div className="pt-20 grid lg:grid-cols-2 sm:lg-col-1 gap-16">
         {DevelopersData.map((item, index) => (
           <div
@@ -30,4 +36,4 @@ export default function Page() {
       </div>
     </div>
   );
-};
+}
