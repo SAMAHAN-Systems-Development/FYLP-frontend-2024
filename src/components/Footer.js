@@ -134,7 +134,7 @@ const Footer = () => {
           Developed by{' '}
           <Link
             target="_blank"
-            href="https://www.facebook.com/SAMAHANSysDev"
+            href="about-the-developers"
             className="font-bold hover:text-[#FD1E0A] transition-colors duration-300"
           >
             SAMAHAN Systems Development
