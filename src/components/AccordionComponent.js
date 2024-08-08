@@ -24,7 +24,7 @@ const AccordionComponent = ({ question, answer }) => {
               className={`bg-white flex justify-between items-center w-full text-left p-4 cursor-pointer`}
               onClick={handleAccordionClick}
             >
-              <span className="capitalize font-semibold font-poppins text-base flex-1">
+              <span className="font-semibold font-poppins sm:text-base text-[12.67px] flex-1">
                 {question}
               </span>
               <IoIosArrowForward
@@ -37,7 +37,7 @@ const AccordionComponent = ({ question, answer }) => {
             className={`overflow-hidden transition-all duration-300 ${isAccordionOpen ? 'max-h-screen py-4 animate-fadeIn' : 'max-h-0 py-0 opacity-0 animate-fadeOut'}`}
           >
             <div>
-              <p className="px-4 capitalize font-normal font-poppins text-base">
+              <p className="px-4 font-normal font-poppins sm:text-base text-[12.67px]">
                 {answer}
               </p>
             </div>

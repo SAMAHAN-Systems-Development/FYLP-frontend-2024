@@ -11,6 +11,8 @@
     --color-yellow: 254 220 62;
     --color-white: 255 255 255;
     --color-black: 32 32 32;
+    --font-inter: 'Inter', sans-serif;
+    --font-poppins: 'Poppins', sans-serif;
   }
 
 *,
@@ -28,3 +30,22 @@ img {
   display: 'block';
 }
 
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+@keyframes float {
+  0% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(30px);
+  }
+  100% {
+      transform: translateY(0);
+  }
+}
+
+.float-image {
+  animation: float 3s ease-in-out infinite;
+}

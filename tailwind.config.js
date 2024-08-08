@@ -13,9 +13,11 @@ module.exports = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
       fontFamily: {
-        inter: ['var(--font-inter)'],
         poppins: ['var(--font-poppins)'],
       },
+    },
+    fontFamily: {
+      poppins: ['var(--font-poppins)'],
     },
     colors: {
       darkblue: 'rgb(var(--color-dark-blue) / <alpha-value>)',
@@ -51,44 +53,44 @@ module.exports = {
       },
     },
     screens: {
-      xsm: '384px',
+      xsm: '0px',
       sm: '576px',
       md: '768px',
       lg: '992px',
       xl: '1200px',
       '2xl': '1400px',
     },
+    plugins: [
+      function ({ matchUtilities, theme, addUtilities }) {
+        matchUtilities(
+          {
+            'text-shadow': (value) => ({
+              textShadow: value,
+            }),
+          },
+          { values: theme('textShadow') }
+        );
+        addUtilities({
+          '.container-xs': {
+            '@apply container max-w-[24rem] mx-auto xsm:px-0': {},
+          },
+          '.container-sm': {
+            '@apply container max-w-[36rem] mx-auto sm:px-0': {},
+          },
+          '.container-md': {
+            '@apply container max-w-[48rem] mx-auto md:px-0': {},
+          },
+          '.container-lg': {
+            '@apply container max-w-[62rem] mx-auto lg:px-0': {},
+          },
+          '.container-xl': {
+            '@apply container max-w-[75rem] mx-auto xl:px-0': {},
+          },
+          '.container-2xl': {
+            '@apply container max-w-[87.5rem] mx-auto 2xl:px-0': {},
+          },
+        });
+      },
+    ],
   },
-  plugins: [
-    function ({ matchUtilities, theme, addUtilities }) {
-      matchUtilities(
-        {
-          'text-shadow': (value) => ({
-            textShadow: value,
-          }),
-        },
-        { values: theme('textShadow') }
-      );
-      addUtilities({
-        '.container-xs': {
-          '@apply container max-w-[24rem] mx-auto xsm:px-0': {},
-        },
-        '.container-sm': {
-          '@apply container max-w-[36rem] mx-auto sm:px-0': {},
-        },
-        '.container-md': {
-          '@apply container max-w-[48rem] mx-auto md:px-0': {},
-        },
-        '.container-lg': {
-          '@apply container max-w-[62rem] mx-auto lg:px-0': {},
-        },
-        '.container-xl': {
-          '@apply container max-w-[75rem] mx-auto xl:px-0': {},
-        },
-        '.container-2xl': {
-          '@apply container max-w-[87.5rem] mx-auto 2xl:px-0': {},
-        },
-      });
-    },
-  ],
 };
