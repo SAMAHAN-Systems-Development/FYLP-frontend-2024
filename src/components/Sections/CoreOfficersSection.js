@@ -7,9 +7,9 @@ const CoreOfficersSection = () => {
   return (
     <div className="pb-24 flex flex-col items-center font-poppins">
       <div className="grid gap-4 text-center">
-        <div className="font-semibold font-poppins">
-          Get to Know the Minds Behind
-          <span className="text-blue"> FYLP 2024</span>
+        <div className="flex gap-[5px] justify-center font-semibold font-poppins">
+          <h1 className="text-center font-poppins font-semibold xl:text-xl xsm:text-[1.04169rem]">Get to Know the Minds Behind</h1>
+          <h1 className="text-center font-poppins font-semibold xl:text-xl xsm:text-[1.04169rem] text-blue"> FYLP 2024</h1>
         </div>
         <p className="text-center font-poppins lg:text-base xsm:text-[0.83331rem]">
           Welcome to the FYLP 2024 Core Team! Our team is composed of dedicated

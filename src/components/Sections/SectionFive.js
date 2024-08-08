@@ -2,7 +2,13 @@ import React from 'react';
 import SectionFiveCard from '@/components/ui/SectionFiveCard';
 import { FYLP_Program } from '@/data/SectionFive';
 import MainButton from '@/components/ui/MainButton';
+
 import Image from 'next/image';
+import picOne from "../../../public/assets/images/Leadership-Skill-Development_One.png"
+import picTwo from "../../../public/assets/images/Networking-and-Mentorship_Two.png"
+import picThree from "../../../public/assets/images/Community-Engagement_Three.png"
+import picFour from "../../../public/assets/images/Personal-Growth_Four.png"
+import picFive from "../../../public/assets/images/Professional-Advancement_Five.png"
 
 const SectionFive = () => {
   return (
@@ -22,13 +28,90 @@ const SectionFive = () => {
               What&apos;s in it for <span className="text-red">you</span>?
             </div>
           </div>
-          <div className="flex justify-center items-center py-10">
-            <div className="grid gap-8 grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-3">
-              {FYLP_Program.map((item, index) => (
-                <div key={index}>
-                  <SectionFiveCard {...item} />
+          <div className="flex flex-col justify-center items-center py-10">
+            <div className="grid gap-[50px] grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3">
+
+              {/* CARD 1 */}
+              <div className='w-[25.625rem] grid gap-y-2 relative'>
+                <div className='relative w-full h-0 pb-[56.25%] overflow-hidden rounded-xl'>
+                  <div className='absolute inset-0 transition-transform duration-300 ease-in-out hover:scale-110'>
+                    <Image className='object-cover' src={picOne}/>
+                  </div>
                 </div>
-              ))}
+                <div className='font-medium text-blue text-xl'>Leadership Skill Development</div>
+                <div className='font-normal text-xl'>Delegates enhance their leadership skills through workshops, interactive sessions, and practical experiences, focusing on strategic thinking, communication, and team management.</div>
+              </div>
+
+              {/* CARD 2 */}
+              <div className='w-[25.625rem] grid gap-y-2 relative'>
+                <div className='relative w-full h-0 pb-[56.25%] overflow-hidden rounded-xl'>
+                  <div className='absolute inset-0 transition-transform duration-300 ease-in-out hover:scale-110'>
+                    <Image className='object-cover' src={picTwo}/>
+                  </div>
+                </div>
+                <div className='font-medium text-blue text-xl'>Networking and Mentorship</div>
+                <div className='font-normal text-xl'>FYLP provides a platform for delegates to build a robust professional network by connecting with fellow participants, experienced mentors, and industry leaders.</div>
+              </div>
+              
+              {/* CARD 3 */}
+              <div className='w-[25.625rem] grid gap-y-2 relative'>
+                <div className='relative w-full h-0 pb-[56.25%] overflow-hidden rounded-xl'>
+                  <div className='absolute inset-0 transition-transform duration-300 ease-in-out hover:scale-110'>
+                    <Image className='object-cover' src={picThree}/>
+                  </div>
+                </div>
+                <div className='font-medium text-blue text-xl'>Community Engagement</div>
+                <div className='font-normal text-xl'>Delegates engage with communities through immersive activities, volunteer work, and collaborative projects, fostering a deep understanding of social issues and driving positive change.</div>
+              </div>
+
+              {/* CARD 4 */}
+              <div className='w-[25.625rem] grid gap-y-2 relative 2xl:hidden'>
+                <div className='relative w-full h-0 pb-[56.25%] overflow-hidden rounded-xl'>
+                  <div className='absolute inset-0 transition-transform duration-300 ease-in-out hover:scale-110'>
+                    <Image className='object-cover' src={picFour}/>
+                  </div>
+                </div>
+                <div className='font-medium text-blue text-xl'>Personal Growth</div>
+                <div className='font-normal text-xl'>FYLP supports self-discovery and personal development with reflective practices, goal-setting exercises, and diverse perspectives, nurturing well-rounded individuals.</div>
+              </div>
+
+              {/* CARD 5 */}
+              <div className='w-[25.625rem] grid gap-y-2 relative lg:hidden'>
+                <div className='relative w-full h-0 pb-[56.25%] overflow-hidden rounded-xl'>
+                  <div className='absolute inset-0 transition-transform duration-300 ease-in-out hover:scale-110'>
+                    <Image className='object-cover' src={picFive}/>
+                  </div>
+                </div>
+                <div className='font-medium text-blue text-xl'>Professional Advancement</div>
+                <div className='font-normal text-xl'>Delegates gain practical experience, build networks, and receive mentorship, enhancing their employability and preparing them for leadership roles in their fields.</div>
+              </div>
+
+            </div>
+
+            <div className="grid mt-[50px] gap-[50px] grid-cols-1 2xl:grid-cols-2">
+
+              {/* CARD 4 */}
+              <div className='w-[25.625rem] grid gap-y-2 relative hidden 2xl:block'>
+                <div className='relative w-full h-0 pb-[56.25%] overflow-hidden rounded-xl'>
+                  <div className='absolute inset-0 transition-transform duration-300 ease-in-out hover:scale-110'>
+                    <Image className='object-cover' src={picFour}/>
+                  </div>
+                </div>
+                <div className='font-medium text-blue text-xl'>Personal Growth</div>
+                <div className='font-normal text-xl'>FYLP supports self-discovery and personal development with reflective practices, goal-setting exercises, and diverse perspectives, nurturing well-rounded individuals.</div>
+              </div>
+
+              {/* CARD 5 */}
+              <div className='w-[25.625rem] grid gap-y-2 relative hidden lg:block'>
+                <div className='relative w-full h-0 pb-[56.25%] overflow-hidden rounded-xl'>
+                  <div className='absolute inset-0 transition-transform duration-300 ease-in-out hover:scale-110'>
+                    <Image className='object-cover' src={picFive}/>
+                  </div>
+                </div>
+                <div className='font-medium text-blue text-xl'>Professional Advancement</div>
+                <div className='font-normal text-xl'>Delegates gain practical experience, build networks, and receive mentorship, enhancing their employability and preparing them for leadership roles in their fields.</div>
+              </div>
+
             </div>
           </div>
           <div className="flex justify-center">
