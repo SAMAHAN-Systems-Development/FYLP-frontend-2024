@@ -16,7 +16,7 @@ const SectionFour = () => {
         <br />
         satisfy all requirements outlined below.
       </div>
-      <div className="grid grid-cols-1 xl:gap-8 xsm:gap-3 lgs:grid-cols-1 xl:grid-cols-3 py-2 px-2">
+      <div className="grid grid-cols-1 xl:gap-8 xsm:gap-3 lg:grid-cols-1 xl:grid-cols-3 py-2 px-2">
         <EligibilityCardLight
           icon={Home}
           title={'Mindanao Resident'}

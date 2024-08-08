@@ -4,7 +4,7 @@ import React from 'react';
 function EligibilityCardDark({ icon, title, details }) {
   return (
     <div
-      className="xl:w-[18.75rem] xl:items-center xl:justify-center xsm:w-full md:w-full bg-blue rounded-[0.9375rem] transition-transform duration-300 ease-in-out hover:scale-110 flex flex-col xl:flex-col xsm:flex-row items-center xsm:items-start gap-2 py-6 px-5"
+      className="xl:max-w-[18.75rem] xl:items-center xl:justify-start xsm:w-full md:w-full bg-blue rounded-[0.9375rem] transition-transform duration-300 ease-in-out hover:scale-110 flex flex-col xl:flex-col xsm:flex-row items-center xsm:items-start gap-2 py-6 px-5"
       style={{
         background: 'linear-gradient(121deg, #0364FD 0%, #00B4FF 100%)',
       }}
@@ -20,6 +20,7 @@ function EligibilityCardDark({ icon, title, details }) {
         <div className="xl:text-xl xsm:text-[0.83331rem] text-white font-medium font-poppins">
           {title}
         </div>
+        
         <div className="xl:text-base text-white xl:text-center xsm:text-[0.66669rem] font-extralight font-poppins">
           {details}
         </div>
