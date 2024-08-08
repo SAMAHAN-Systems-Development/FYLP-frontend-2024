@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",    
-    "start": "NODE_OPTIONS=\"--max_old_space_size=410\" next start",
+    "build": "next build",
+    "start": "next start",
     "lint": "next lint",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
