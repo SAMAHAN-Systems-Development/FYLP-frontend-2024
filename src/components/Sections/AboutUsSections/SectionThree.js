@@ -25,7 +25,7 @@ const SectionThree = () => {
           excited to engage with you throughout the program!
         </p>
       </div>
-      <MainButton href="/send-us-a-message">Send us a Message</MainButton>
+      <MainButton href="mailto:fylp2024@gmail.com">Send us a Message</MainButton>
     </div>
   );
 };

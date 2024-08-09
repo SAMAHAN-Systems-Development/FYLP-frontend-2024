@@ -11,7 +11,7 @@ const StayConnected = () => {
         Follow us on social media to stay updated on the latest news and events
         related to the FYLP 2024!
       </p>
-      <div className="scale-[50%] sm:scale-[100%]">
+      <div className="scale-[80%] sm:scale-[100%]">
         <Socials />
       </div>
     </div>
