@@ -7,7 +7,7 @@ const CoreOfficersSection = () => {
   return (
     <div className="pb-24 flex flex-col items-center font-poppins">
       <div className="grid gap-4 text-center">
-        <div className="flex gap-[5px] justify-center font-semibold font-poppins">
+        <div className="flex gap-[5px] justify-center font-semibold font-poppins flex-col sm:flex-row">
           <h1 className="text-center font-poppins font-semibold xl:text-xl xsm:text-[1.04169rem]">Get to Know the Minds Behind</h1>
           <h1 className="text-center font-poppins font-semibold xl:text-xl xsm:text-[1.04169rem] text-blue"> FYLP 2024</h1>
         </div>
