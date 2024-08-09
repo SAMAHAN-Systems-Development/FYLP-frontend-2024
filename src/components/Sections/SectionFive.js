@@ -120,7 +120,7 @@ const SectionFive = () => {
             </div>
           </div>
           <div className="flex justify-center py-5">
-            <MainButton href="/RegistrationPage">Register Now</MainButton>
+            <MainButton href="/registration">Register Now</MainButton>
           </div>
         </div>
       </div>

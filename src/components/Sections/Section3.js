@@ -31,7 +31,7 @@ const Section3 = () => {
                     </p>
                 </div>
                 <div className='flex flex-col xl:flex-row justify-start items-center w-full absolute bottom-0 gap-[5.76px]'>
-                    <MainButton href='/RegistrationPage'>Register Now</MainButton>
+                    <MainButton href='/registration'>Register Now</MainButton>
                     <a 
                         href='https://drive.google.com/uc?export=download&id=1D3QL0WTxxrlBOPx1R054j1B4TBJXX30A' 
                         className='uppercase font-poppins sm:text-base text-[10.67px] text-red xl:ml-4 hover:underline cursor-pointer transition-transform duration-300'>

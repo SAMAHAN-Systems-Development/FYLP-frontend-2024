@@ -50,13 +50,13 @@ const Footer = () => {
               Home
             </Link>
             <Link
-              href="/AboutUsPage"
+              href="/about-us"
               className="text-sm hover:text-[#FD1E0A] transition-colors duration-300"
             >
               About Us
             </Link>
             <Link
-              href="/FAQ"
+              href="/frequently-asked-questions"
               className="text-sm hover:text-[#FD1E0A] transition-colors duration-300"
             >
               FAQ

@@ -50,8 +50,8 @@ const NavigationBar = () => {
                         >
                             {[
                                 { label: 'Home', href: '/' },
-                                { label: 'About', href: 'AboutUsPage' },
-                                { label: 'FAQ', href: 'FAQ' },
+                                { label: 'About', href: 'about-us' },
+                                { label: 'FAQ', href: 'frequently-asked-questions' },
                                 { label: 'Check Status', href: 'check-status' },
                             ].map((nav) => (
                                 <Link key={nav.label} href={nav.href}>
