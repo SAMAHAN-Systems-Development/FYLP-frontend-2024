@@ -5,7 +5,7 @@ import Primer from '/public/assets/images/Primer.png'
 
 const Section3 = () => {
     return (
-        <div className='flex w-full xl:h-[820px] xsm:h-[1100px] relative justify-center'>
+        <div className='flex w-full xl:h-[820px] h-[850px] sm:h-[1000px] relative justify-center'>
             <div className="scale-[90%] sm:scale-[100%]">
                 <Image
                     src={Primer}
