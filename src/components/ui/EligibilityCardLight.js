@@ -12,10 +12,10 @@ function EligibilityCardLight({ icon, title, details }) {
         />
       </div>
       <div className="flex flex-col xl:items-center xl:justify-center xsm:items-start text-center xsm:text-left">
-        <div className="text-center xl:text-xl xsm:text-[0.83331rem] text-blue font-medium font-poppins">
+        <div className="text-center sm:text-xl xsm:text-[0.83331rem] text-blue font-medium font-poppins">
           {title}
         </div>
-        <div className="xl:text-base text-blue xl:text-center xsm:text-[0.66669rem] font-extralight font-poppins">
+        <div className="sm:text-base text-blue xl:text-center xsm:text-[0.66669rem] font-extralight font-poppins">
           {details}
         </div>
       </div>

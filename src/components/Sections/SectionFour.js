@@ -8,10 +8,10 @@ import Person from '../../../public/assets/person.png';
 const SectionFour = () => {
   return (
     <div className="xl:py-[5.12rem] xl:px-[13.5rem] xsm:py-[2.75rem] xsm:px-[1rem] flex flex-col gap-2 justify-center items-center">
-      <div className="uppercase xl:text-2xl xsm:text-[0.83331rem] font-semibold font-poppins">
+      <div className="uppercase sm:text-2xl xsm:text-md font-semibold font-poppins">
         Eligibility
       </div>
-      <div className="xl:text-base xsm:text-[0.66669rem] font-normal text-center font-poppins">
+      <div className="sm:text-base xsm:text-[0.66669rem] font-normal text-center font-poppins">
         Meet the criteria to qualify and participate in this program. Ensure you
         <br />
         satisfy all requirements outlined below.

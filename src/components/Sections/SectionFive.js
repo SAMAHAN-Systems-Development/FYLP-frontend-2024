@@ -24,66 +24,67 @@ const SectionFive = () => {
         </div>
         <div className="relative z-10 mx-auto max-w-screen-2xl">
           <div className="flex justify-center">
-            <div className="xl:text-2xl xsm:text-[0.83331rem] font-semibold uppercase text-center">
+            <div className="text-md sm:text-2xl font-semibold uppercase text-center">
               What&apos;s in it for <span className="text-red">you</span>?
             </div>
           </div>
-          <div className="flex flex-col justify-center items-center py-10">
+
+          <div className="flex flex-col justify-center items-center py-10 mx-[25px]">
             <div className="grid gap-[50px] grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3">
 
               {/* CARD 1 */}
-              <div className='w-[25.625rem] grid gap-y-2 relative'>
+              <div className='max-w-[25.625rem] grid gap-y-2 relative'>
                 <div className='relative w-full h-0 pb-[56.25%] overflow-hidden rounded-xl'>
                   <div className='absolute inset-0 transition-transform duration-300 ease-in-out hover:scale-110'>
                     <Image className='object-cover' src={picOne}/>
                   </div>
                 </div>
-                <div className='font-medium text-blue text-xl'>Leadership Skill Development</div>
-                <div className='font-normal text-xl'>Delegates enhance their leadership skills through workshops, interactive sessions, and practical experiences, focusing on strategic thinking, communication, and team management.</div>
+                <div className='font-semibold text-blue text-md sm:text-2xl mt-[10px]'>Leadership Skill Development</div>
+                <div className='font-normal text-sm sm:text-xl'>Delegates enhance their leadership skills through workshops, interactive sessions, and practical experiences, focusing on strategic thinking, communication, and team management.</div>
               </div>
 
               {/* CARD 2 */}
-              <div className='w-[25.625rem] grid gap-y-2 relative'>
+              <div className='max-w-[25.625rem] grid gap-y-2 relative'>
                 <div className='relative w-full h-0 pb-[56.25%] overflow-hidden rounded-xl'>
                   <div className='absolute inset-0 transition-transform duration-300 ease-in-out hover:scale-110'>
                     <Image className='object-cover' src={picTwo}/>
                   </div>
                 </div>
-                <div className='font-medium text-blue text-xl'>Networking and Mentorship</div>
-                <div className='font-normal text-xl'>FYLP provides a platform for delegates to build a robust professional network by connecting with fellow participants, experienced mentors, and industry leaders.</div>
+                <div className='font-semibold text-blue text-md sm:text-2xl mt-[10px]'>Networking and Mentorship</div>
+                <div className='font-normal text-sm sm:text-xl'>FYLP provides a platform for delegates to build a robust professional network by connecting with fellow participants, experienced mentors, and industry leaders.</div>
               </div>
               
               {/* CARD 3 */}
-              <div className='w-[25.625rem] grid gap-y-2 relative'>
+              <div className='max-w-[25.625rem] grid gap-y-2 relative'>
                 <div className='relative w-full h-0 pb-[56.25%] overflow-hidden rounded-xl'>
                   <div className='absolute inset-0 transition-transform duration-300 ease-in-out hover:scale-110'>
                     <Image className='object-cover' src={picThree}/>
                   </div>
                 </div>
-                <div className='font-medium text-blue text-xl'>Community Engagement</div>
-                <div className='font-normal text-xl'>Delegates engage with communities through immersive activities, volunteer work, and collaborative projects, fostering a deep understanding of social issues and driving positive change.</div>
+                <div className='font-semibold text-blue text-md sm:text-2xl mt-[10px]'>Community Engagement</div>
+                <div className='font-normal text-sm sm:text-xl'>Delegates engage with communities through immersive activities, volunteer work, and collaborative projects, fostering a deep understanding of social issues and driving positive change.</div>
               </div>
 
               {/* CARD 4 */}
-              <div className='w-[25.625rem] grid gap-y-2 relative 2xl:hidden'>
+              <div className='max-w-[25.625rem] grid gap-y-2 relative 2xl:hidden'>
                 <div className='relative w-full h-0 pb-[56.25%] overflow-hidden rounded-xl'>
                   <div className='absolute inset-0 transition-transform duration-300 ease-in-out hover:scale-110'>
                     <Image className='object-cover' src={picFour}/>
                   </div>
                 </div>
-                <div className='font-medium text-blue text-xl'>Personal Growth</div>
-                <div className='font-normal text-xl'>FYLP supports self-discovery and personal development with reflective practices, goal-setting exercises, and diverse perspectives, nurturing well-rounded individuals.</div>
+                <div className='font-semibold text-blue text-md sm:text-2xl mt-[10px]'>Personal Growth</div>
+                <div className='font-normal text-sm sm:text-xl'>FYLP supports self-discovery and personal development with reflective practices, goal-setting exercises, and diverse perspectives, nurturing well-rounded individuals.</div>
               </div>
 
               {/* CARD 5 */}
-              <div className='w-[25.625rem] grid gap-y-2 relative lg:hidden'>
+              <div className='max-w-[25.625rem] grid gap-y-2 relative lg:hidden'>
                 <div className='relative w-full h-0 pb-[56.25%] overflow-hidden rounded-xl'>
                   <div className='absolute inset-0 transition-transform duration-300 ease-in-out hover:scale-110'>
                     <Image className='object-cover' src={picFive}/>
                   </div>
                 </div>
-                <div className='font-medium text-blue text-xl'>Professional Advancement</div>
-                <div className='font-normal text-xl'>Delegates gain practical experience, build networks, and receive mentorship, enhancing their employability and preparing them for leadership roles in their fields.</div>
+                <div className='font-semibold text-blue text-md sm:text-2xl mt-[10px]'>Professional Advancement</div>
+                <div className='font-normal text-sm sm:text-xl'>Delegates gain practical experience, build networks, and receive mentorship, enhancing their employability and preparing them for leadership roles in their fields.</div>
               </div>
 
             </div>
@@ -91,37 +92,40 @@ const SectionFive = () => {
             <div className="grid mt-[50px] gap-[50px] grid-cols-1 2xl:grid-cols-2">
 
               {/* CARD 4 */}
-              <div className='w-[25.625rem] grid gap-y-2 relative hidden 2xl:block'>
+              <div className='max-w-[25.625rem] grid gap-y-2 relative hidden 2xl:block'>
                 <div className='relative w-full h-0 pb-[56.25%] overflow-hidden rounded-xl'>
                   <div className='absolute inset-0 transition-transform duration-300 ease-in-out hover:scale-110'>
                     <Image className='object-cover' src={picFour}/>
                   </div>
                 </div>
-                <div className='font-medium text-blue text-xl'>Personal Growth</div>
-                <div className='font-normal text-xl'>FYLP supports self-discovery and personal development with reflective practices, goal-setting exercises, and diverse perspectives, nurturing well-rounded individuals.</div>
+                <div className='font-semibold text-blue text-md sm:text-2xl mt-[15px]'>Personal Growth</div>
+                <div className='font-normal text-sm sm:text-xl mt-[8px]'>FYLP supports self-discovery and personal development with reflective practices, goal-setting exercises, and diverse perspectives, nurturing well-rounded individuals.</div>
               </div>
 
               {/* CARD 5 */}
-              <div className='w-[25.625rem] grid gap-y-2 relative hidden lg:block'>
+              <div className='max-w-[25.625rem] grid gap-y-2 relative hidden lg:block'>
                 <div className='relative w-full h-0 pb-[56.25%] overflow-hidden rounded-xl'>
                   <div className='absolute inset-0 transition-transform duration-300 ease-in-out hover:scale-110'>
                     <Image className='object-cover' src={picFive}/>
                   </div>
                 </div>
-                <div className='font-medium text-blue text-xl'>Professional Advancement</div>
-                <div className='font-normal text-xl'>Delegates gain practical experience, build networks, and receive mentorship, enhancing their employability and preparing them for leadership roles in their fields.</div>
+                <div className='font-semibold text-blue text-md sm:text-2xl mt-[15px]'>Professional Advancement</div>
+                <div className='font-normal text-sm sm:text-xl mt-[8px]'>Delegates gain practical experience, build networks, and receive mentorship, enhancing their employability and preparing them for leadership roles in their fields.</div>
               </div>
 
             </div>
-          </div>
-          <div className="flex justify-center">
-            <div className="font-normal text-xl text-center pt-10">
-              Be a part of this immersive leadership program with FYLP 2024.
+
+            <div className="flex justify-center">
+              <div className="font-normal text-sm sm:text-xl text-center pt-10">
+                Be a part of this immersive leadership program with FYLP 2024.
+              </div>
             </div>
+            <div className="flex justify-center py-5 mb-[20rem]">
+              <MainButton href="/RegistrationPage">Register Now</MainButton>
+            </div>
+
           </div>
-          <div className="flex justify-center py-5">
-            <MainButton href="/RegistrationPage">Register Now</MainButton>
-          </div>
+
         </div>
       </div>
     </div>
