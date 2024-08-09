@@ -28,7 +28,7 @@ const NavigationBar = () => {
                     onClick={toggleDropdown}
                 ></div>
             )}
-            <div className={`fixed top-0 w-full z-50 ${isDropdownOpen ? 'bg-white' : 'bg-gradient-to-b from-white via-white/50 to-transparent'}`}>
+            <div className={`fixed top-0 w-full z-50 ${isDropdownOpen ? 'bg-white' : 'bg-gradient-to-b from-white via-white/50 to-transparent h-[250px]'}`}>
                 <div className="p-[1.5625rem] flex flex-col lg:flex-row justify-between items-start">
                     <div className="w-full flex justify-between items-center">
                         <div className="w-[7.8125rem] py-1 flex-col justify-center items-center gap-2.5 inline-flex">
