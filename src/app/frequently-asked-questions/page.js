@@ -13,7 +13,7 @@ const Page = () => {
             <Banner />
             <Divider title={'Frequently Asked Questions'}>
                 <div className="flex justify-center flex-wrap">
-                    <div className="flex flex-col justify-center flex-wrap mr-5">
+                    <div className="flex flex-col justify-center flex-wrap">
                         <AccordionComponent
                             question="What is the Filipino Youth Leadership Program (FYLP)?"
                             answer="FYLP is a leadership development initiative aimed at cultivating young leaders across the Philippines, with a special focus on Mindanao. The program emphasizes community empowerment, collective action, and nation-building."
@@ -71,7 +71,7 @@ const Page = () => {
                             answer="Key dates, including application deadlines, program start and end dates, and important events, will be announced on the FYLP website. Applicants are encouraged to check the website regularly for updates. If you have any other questions or need further assistance, please feel free to contact us through our official channels."
                         />
                     </div>
-                    <div id="right-group" className="flex-shrink-0 sm:w-[18.75rem] sm:h-[18.75rem] w-[14.75rem] h-[14.75rem] xsm:mt-6 lg:mt-6 2xl:mt-2  border-[#9CA3AF] border-2 rounded-[0.9375rem] flex flex-col justify-center items-center p-4">
+                    <div id="right-group" className="flex-shrink-0 sm:w-[18.75rem] sm:h-[18.75rem] w-[14.75rem] h-[14.75rem] xsm:mt-6 lg:mt-6 xl:mt-2  border-[#9CA3AF] border-2 rounded-[0.9375rem] flex flex-col justify-center items-center p-4">
                         <div className="flex flex-col items-center text-center">
                             <div className="sm:text-xl text-[0.83331rem] text-black font-bold font-poppins mb-3">
                                 Have More Questions?
