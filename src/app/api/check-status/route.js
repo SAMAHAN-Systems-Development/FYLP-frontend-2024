@@ -203,10 +203,10 @@ export async function POST(request) {
       { status: 200 }
     );
   } catch (e) {
-    console.log(e);
+    console.error(e);
     return NextResponse.json(
       {
-        message: [e.message],
+        message: ['Something went wrong please try again.'],
       },
       { status: 500 }
     );
