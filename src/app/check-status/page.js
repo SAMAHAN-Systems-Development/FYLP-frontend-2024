@@ -54,9 +54,11 @@ export default function Page() {
       <div
         id=""
         className="flex flex-col justify-center items-center font-poppins
-        sm:px-24 md:px-40 lg:px-80"
+          sm:px-24 md:px-40 lg:px-80"
       >
-        <p className="font-extrabold py-20 text-[16.67px] xl:text-2xl">CHECK APPLICATION STATUS</p>
+        <p className="font-extrabold py-20 text-[16.67px] xl:text-2xl">
+          CHECK APPLICATION STATUS
+        </p>
       </div>
       <div className="xsm:px-12 sm:px-24 md:px-40 lg:px-70 xl:px-80">
         <p>
@@ -65,11 +67,8 @@ export default function Page() {
         </p>
 
         <p className="mt-7">I am a:</p>
-        <div className="mt-2">
-          <CheckStatusComponent
-            formData={formData}
-            onChange={onChange}
-          ></CheckStatusComponent>
+        <div className="mt-2 ">
+          <CheckStatusComponent formData={formData} onChange={onChange} />
         </div>
         <p className="mt-10 ">
           Enter your email address below and click
