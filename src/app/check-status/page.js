@@ -56,7 +56,7 @@ export default function Page() {
         className="flex flex-col justify-center items-center font-poppins
         sm:px-24 md:px-40 lg:px-80"
       >
-        <p className="font-extrabold py-20 text-lg">CHECK APPLICATION STATUS</p>
+        <p className="font-extrabold py-20 text-[16.67px] xl:text-2xl">CHECK APPLICATION STATUS</p>
       </div>
       <div className="xsm:px-12 sm:px-24 md:px-40 lg:px-70 xl:px-80">
         <p>
