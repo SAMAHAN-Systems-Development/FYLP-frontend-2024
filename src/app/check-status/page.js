@@ -27,6 +27,10 @@ export default function Page() {
 
   const onSubmit = async (e) => {
     e.preventDefault();
+    setMessage({
+      content: 'Searching the database for your application...',
+      success: true,
+    });
 
     try {
       const response = await axios.post('/api/check-status', formData);
