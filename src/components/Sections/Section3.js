@@ -15,7 +15,7 @@ const Section3 = () => {
                 />
             </div>
             <div id='right-group' className='absolute 2xl:w-[576px] xl:w-[526px] xsm:h-[189.33px] xsm:w-[189.33px] sm:h-[284px] xl:relative xsm:mt-[650px] xl:my-[232px] xl:mr-[50px] z-30 flex flex-col items-center xl:items-start overflow-visible'>
-                <div className='font-poppins font-semibold sm:text-[25px] text-[16.67px] flex justify-center xl:justify-start w-full sm:gap-2 gap-[2px]'>
+                <div className='font-poppins font-semibold sm:text-[25px] text-sm flex justify-center xl:justify-start w-full sm:gap-2 gap-1'>
                     <span className="text-blue"> Filipino</span>
                     <span className="text-red"> Youth</span>
                     <span className="text-yellow"> Leadership</span>
