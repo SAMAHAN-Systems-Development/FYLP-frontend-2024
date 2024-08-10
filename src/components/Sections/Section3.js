@@ -6,12 +6,12 @@ import Primer from '/public/assets/images/Primer.png'
 const Section3 = () => {
     return (
         <div className='flex w-full xl:h-[820px] h-[850px] sm:h-[1000px] relative justify-center'>
-            <div className="scale-[90%] sm:scale-[100%]">
+            <div className="scale-[90%] xsm:scale-[100%]">
                 <Image
                     src={Primer}
                     alt='Primer'
                     placeholder='blur'
-                    className='relative xl:top-[-40px] sm:top-[-0px] xsm:top-[0] xl:right-[10px] xsm:w-[430px] sm:w-[500px] sm:h-[629.06px] xl:w-[647px] xl:h-[814px] overflow-visible float-image'
+                    className='relative xl:top-[-40px] sm:top-[-0px] xsm:top-[20px] xl:right-[10px] xsm:h-[630px] xsm:w-[670px] sm:w-[500px] sm:h-[629.06px] xl:w-[647px] xl:h-[814px] overflow-visible float-image'
                 />
             </div>
             <div id='right-group' className='absolute 2xl:w-[576px] xl:w-[526px] xsm:h-[189.33px] xsm:w-[189.33px] sm:h-[284px] xl:relative xsm:mt-[650px] xl:my-[232px] xl:mr-[50px] z-30 flex flex-col items-center xl:items-start overflow-visible'>
