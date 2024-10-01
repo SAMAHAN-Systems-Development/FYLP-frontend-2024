@@ -1,7 +1,7 @@
-import executiveDirector from '../../public/assets/images/core-officers/Hannah-Executive-Director.png';
-import deputyExecutiveDirector from '../../public/assets/images/core-officers/Felicia-Assistant-Executive.png';
-import executiveSecretary from '../../public/assets/images/core-officers/Bastian-Executive-Secretary.png';
-import vicePresidentSecretariat from '../../public/assets/images/core-officers/Carungay-VP-Secretariat.png';
+import executiveDirector from '../../public/assets/images/core-officers/ICOMMP-taken/executiveDirector.png';
+import deputyExecutiveDirector from '../../public/assets/images/core-officers/ICOMMP-taken/deputyExecutiveDirector.png';
+import executiveSecretary from '../../public/assets/images/core-officers/ICOMMP-taken/executiveSecretary.png';
+import vicePresidentSecretariat from '../../public/assets/images/core-officers/ICOMMP-taken/vicePresidentSecretariat.png';
 
 export const CoreOfficersData = [
   {
