@@ -21,7 +21,7 @@
     "axios": "^1.7.4",
     "googleapis": "^140.0.1",
     "material-icons": "^1.13.12",
-    "next": "14.2.5",
+    "next": "14.2.13",
     "nodemailer": "^6.9.14",
     "react": "^18",
     "react-dom": "^18",
